@@ -1,9 +1,31 @@
 import React from 'react';
 import './App.css';
-import { HeaderResponsive } from './components/header';
+import { HeaderResponsive } from './components/HeaderComponent';
+import { MantineProvider } from '@mantine/core';
+import { FooterResponsive } from './components/FooterComponent';
+import { StatsGroup } from './components/StatsGroupComponent';
+import { ContactUs } from './components/ContactUsComponent';
+import { Route, BrowserRouter as Router, Routes, Link } from 'react-router-dom'  
+
+const NoPage = () => {
+  return <Link to="/about">About</Link>;
+};
+
 function App() {
   return (
-    <HeaderResponsive/>
+    <>
+    <MantineProvider theme={{ colorScheme: 'dark' }} withGlobalStyles>
+      <HeaderResponsive/>
+        <Router>  
+          <Routes>
+              <Route path="about" element={<StatsGroup/>}/>
+              <Route path="contact" element={<ContactUs/>}/>
+              <Route path="*" element={<NoPage/>}/>
+          </Routes>
+        </Router>
+      <FooterResponsive/>
+    </MantineProvider>
+    </>
   );
 }
 

@@ -1,0 +1,40 @@
+{
+    "header": {
+        "links": [
+            {"link": "#", "label": {"en": "label en", "de": "label de"}},
+            {"link": "#", "label": {"en": "label en", "de": "label de"}},
+            {"link": "#", "label": {"en": "label en", "de": "label de"}}
+        ]
+    },
+    "statistics": [
+        {
+            "title": {"en": "label en", "de": "label de"},
+            "category": {"en": "Users", "de": "Nutzer"},
+            "description":
+                {
+                    "en": "Description",
+                    "de": "Beschreibung"
+                }
+        },
+        {
+            "title": {"en": "label en", "de": "label de"},
+            "category": {"en": "Users", "de": "Nutzer"},
+            "description":
+                {
+                    "en": "Description",
+                    "de": "Beschreibung"
+                }
+        }
+    ],
+    "footer": {
+        "linkGroups": [
+            {
+                "title": "hello there",
+                "links": [
+                    {"label": {"en": "Footer Link 1 en", "de": "Footer Link 2 de"}, "link": "#"},
+                    {"label": {"en": "Footer Link 1 en", "de": "Footer Link 2 de"}, "link": "#"}
+                ]
+            }
+        ]
+    }
+}

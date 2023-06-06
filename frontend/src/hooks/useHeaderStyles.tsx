@@ -64,8 +64,8 @@ export const useHeaderStyles = createStyles((theme) => ({
   
     linkActive: {
       '&, &:hover': {
-        backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
-        color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
+        backgroundColor: theme.fn.variant({ variant: 'light', color: theme.colors.red[5] }).background,
+        color: theme.fn.variant({ variant: 'light', color: theme.colors.red[5] }).color,
       },
     },
   }));

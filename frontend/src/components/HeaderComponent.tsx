@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-import data from '../data/data.json';
 import {
   Header,
   Container,
@@ -13,20 +12,18 @@ import { useDisclosure } from '@mantine/hooks';
 import { MantineLogo } from '@mantine/ds';
 import { HEADER_HEIGHT } from '../utils/constants';
 import { useHeaderStyles } from '../hooks/useHeaderStyles';
-
-interface HeaderResponsiveProps {
-  links: { link: string; label: string }[];
-}
+import { DataService } from '../services/DataService';
+import { translate } from '../services/LanguageService';
 
 export function HeaderResponsive() {
-  const links = data.header;
+  const links = DataService.getHeaderData().links;
   const [opened, { toggle, close }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useHeaderStyles();
 
   const items = links.map((link) => (
     <a
-      key={link.label}
+      key={link.label.en}
       href={link.link}
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
       onClick={(event) => {
@@ -35,7 +32,7 @@ export function HeaderResponsive() {
         close();
       }}
     >
-      {link.label}
+      {translate(link.label)}
     </a>
   ));
 
