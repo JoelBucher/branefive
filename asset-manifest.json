@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/branefive/static/css/main.073c9b0a.css",
-    "main.js": "/branefive/static/js/main.a1b14c13.js",
+    "main.js": "/branefive/static/js/main.0b525c6d.js",
     "static/js/787.cda612ba.chunk.js": "/branefive/static/js/787.cda612ba.chunk.js",
     "index.html": "/branefive/index.html",
     "main.073c9b0a.css.map": "/branefive/static/css/main.073c9b0a.css.map",
-    "main.a1b14c13.js.map": "/branefive/static/js/main.a1b14c13.js.map",
+    "main.0b525c6d.js.map": "/branefive/static/js/main.0b525c6d.js.map",
     "787.cda612ba.chunk.js.map": "/branefive/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a1b14c13.js"
+    "static/js/main.0b525c6d.js"
   ]
 }
