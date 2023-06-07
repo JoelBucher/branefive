@@ -5,7 +5,7 @@ import { MantineProvider } from '@mantine/core';
 import { FooterResponsive } from './components/FooterComponent';
 import { StatsGroup } from './components/StatsGroupComponent';
 import { ContactUs } from './components/ContactUsComponent';
-import { Route, BrowserRouter as Router, Routes, Link } from 'react-router-dom'  
+import { Route, HashRouter as Router, Routes, Link } from 'react-router-dom'  
 import { Newsletter } from './components/NewsletterComponent';
 
 const NoPage = () => {
