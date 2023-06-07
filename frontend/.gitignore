@@ -18,6 +18,10 @@
 .env.test.local
 .env.production.local
 
+# newsletter images
+/src/assets/enjoyer1.jpg
+/src/assets/enjoyer2.PNG
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
