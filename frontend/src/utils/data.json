@@ -1,9 +1,10 @@
 {
     "header": {
         "links": [
-            {"link": "#", "label": {"en": "label en", "de": "label de"}},
-            {"link": "#", "label": {"en": "label en", "de": "label de"}},
-            {"link": "#", "label": {"en": "label en", "de": "label de"}}
+            {"link": "/", "label": {"en": "Home", "de": "Home"}},
+            {"link": "/band", "label": {"en": "Band", "de": "Band"}},
+            {"link": "/tour", "label": {"en": "Tour", "de": "Tour"}},
+            {"link": "/contact", "label": {"en": "Contact", "de": "Kontakt"}}
         ]
     },
     "statistics": [
@@ -29,11 +30,82 @@
     "footer": {
         "linkGroups": [
             {
-                "title": "hello there",
+                "title": "Band",
                 "links": [
-                    {"label": {"en": "Footer Link 1 en", "de": "Footer Link 2 de"}, "link": "#"},
-                    {"label": {"en": "Footer Link 1 en", "de": "Footer Link 2 de"}, "link": "#"}
+                    {"label": {"en": "Band", "de": "Band"}, "link": "/band"},
+                    {"label": {"en": "Tour", "de": "Tour"}, "link": "/tour"}
                 ]
+            },
+            {
+                "title": "Music",
+                "links": [
+                    {"label": {"en": "Discography", "de": "Diskografie"}, "link": "/music"}
+                ]
+            },
+            {
+                "title": "Contact",
+                "links": [
+                    {"label": {"en": "Email", "de": "Email"}, "link": "/contact"}
+                ]
+            }
+        ]
+    },
+    "music": {
+        "albums":[
+            {
+                "title": "Singin' in Silence",
+                "assetId": "singinInSilence",
+                "releaseDate": {"en": "7th October 2022", "de": "7. Oktober 2022"},
+                "description": {
+                    "en": "description english",
+                    "de": "Unsere erste EP \"Singin' in Silence\" wurde veröffentlicht!"},
+                "songs": [
+                    {"trackNumber": 1, "title": "Meant to Be", "duration": "3:12"},
+                    {"trackNumber": 2, "title": "Wrong", "duration": "3:11"},
+                    {"trackNumber": 3, "title": "Singin' in Silence", "duration": "3:11"},
+                    {"trackNumber": 4, "title": "Melody", "duration": "3:10"},
+                    {"trackNumber": 5, "title": "Why Don't You Say", "duration": "3:10"},
+                    {"trackNumber": 6, "title": "My Way", "duration": "3:10"}
+                ]
+            },
+            {
+                "title": "Free The Animal In You",
+                "assetId": "freeTheAnimalInYou",
+                "releaseDate": {"en": "25th September 2020", "de": "25. September 2020"},
+                "description": {
+                    "en": "description english",
+                    "de": "Unsere erste Single \"Free the Animal in You\" wurde veröffentlicht!"},
+                "songs": [
+                    {"trackNumber": 1, "title": "Free The Animal In You", "duration": "3:12"}
+                ]
+            }
+        ]
+    },
+    "tour": {
+        "events": [
+            {
+                "name": "Enoteca da Ramundo",
+                "description": {"en": "", "de": ""},
+                "date": "2023-05-27T19:00:00Z",
+                "place": {"name": "Beromünster, CH", "latitute": 0, "longitude": 0}
+            },
+            {
+                "name": "Dorfturnier Baubu",
+                "description": {"en": "", "de": ""},
+                "date": "2023-07-08",
+                "place": {"name": "Ballwil, CH", "latitude": 0, "longitude": 0}
+            },
+            {
+                "name": "Städtlifäscht Risee",
+                "description": {"en": "", "de": ""},
+                "date": "2023-07-01T20:45:00Z",
+                "place": {"name": "Richensee, CH", "latitude": 0, "longitude": 0}
+            },
+            {
+                "name": "Seefestival Wädenswil",
+                "description": {"en": "", "de": ""},
+                "date": "2023-07-31T20:00:00Z",
+                "place": {"name": "Wädenswil, CH", "latitude": 0, "longitude": 0}
             }
         ]
     }

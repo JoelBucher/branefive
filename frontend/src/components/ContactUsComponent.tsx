@@ -25,27 +25,29 @@ export function ContactUs() {
             </Text>
 
             <table>
-              <tr className={classes.contactIconElement}>
-                <td><IconAt size={30}></IconAt></td>
-                <td>
-                  <p className={classes.iconListText}>Email</p>
-                  <p className={classes.iconListText}><b>info[at]branefive.com</b></p>
-                </td>
-              </tr>
-              <tr className={classes.contactIconElement}>
-                <td><IconPhone size={30}></IconPhone></td>
-                <td>
-                  <p className={classes.iconListText}>Phone</p>
-                  <p className={classes.iconListText}><b>041 917 01 18</b></p>
-                </td>
-              </tr>
-              <tr className={classes.contactIconElement}>
-                <td><IconMapPin size={30}></IconMapPin></td>
-                <td>
-                  <p className={classes.iconListText}>Address</p>
-                  <p className={classes.iconListText}><b>Branefive <br></br> Rankstrasse 4 <br></br>6294 Ermensee</b></p>
-                </td>
-              </tr>
+              <tbody>
+                <tr className={classes.contactIconElement}>
+                  <td><IconAt size={30}></IconAt></td>
+                  <td>
+                    <p className={classes.iconListText}>Email</p>
+                    <p className={classes.iconListText}><b>info[at]branefive.com</b></p>
+                  </td>
+                </tr>
+                <tr className={classes.contactIconElement}>
+                  <td><IconPhone size={30}></IconPhone></td>
+                  <td>
+                    <p className={classes.iconListText}>Phone</p>
+                    <p className={classes.iconListText}><b>041 917 01 18</b></p>
+                  </td>
+                </tr>
+                <tr className={classes.contactIconElement}>
+                  <td><IconMapPin size={30}></IconMapPin></td>
+                  <td>
+                    <p className={classes.iconListText}>Address</p>
+                    <p className={classes.iconListText}><b>Branefive <br></br> Rankstrasse 4 <br></br>6294 Ermensee</b></p>
+                  </td>
+                </tr>
+              </tbody>
             </table>
           </div>
   

@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState } from 'react';
 import {
   Header,
@@ -9,11 +8,12 @@ import {
   Transition,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { MantineLogo } from '@mantine/ds';
 import { HEADER_HEIGHT } from '../utils/constants';
 import { useHeaderStyles } from '../hooks/useHeaderStyles';
 import { DataService } from '../services/DataService';
 import { translate } from '../services/LanguageService';
+import { Link } from 'react-router-dom';
+import logo from '../assets/branefive_logo.svg';
 
 export function HeaderResponsive() {
   const links = DataService.getHeaderData().links;
@@ -21,25 +21,25 @@ export function HeaderResponsive() {
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useHeaderStyles();
 
-  const items = links.map((link) => (
-    <a
-      key={link.label.en}
-      href={link.link}
+  const items = links.map((link, index) =>
+    <Link
+      key={index}
+      to={link.link}
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
-      onClick={(event) => {
-        event.preventDefault();
+      onClick={() => {
         setActive(link.link);
-        close();
       }}
     >
       {translate(link.label)}
-    </a>
-  ));
+    </Link>
+  );
 
   return (
-    <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
+    <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
-        <MantineLogo size={28} />
+        <Link to={"/"}>
+          <img src={logo} alt="Your SVG" height={45}/>
+        </Link>
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>

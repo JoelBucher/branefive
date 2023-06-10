@@ -1,19 +1,8 @@
 import { Container, Text, Button, Group, Image, Grid, Avatar, MediaQuery } from '@mantine/core';
 import { GithubIcon } from '@mantine/ds';
 import { useNewsletterStyle } from '../hooks/useNewsletterStyle';
-import enjoyerOneSrc from '../assets/enjoyer1.jpg';
-import enjoyerTwoSrc from '../assets/enjoyer2.png';
+import { AssetsService } from '../services/AssetsService';
 
-function NewsLetterImage(){
-  return(
-    <>
-      <Avatar.Group spacing="20%">
-        <Avatar src={enjoyerTwoSrc} size="70%" radius="100%"/>
-        <Avatar src={enjoyerOneSrc} size="70%" radius="100%"/>
-      </Avatar.Group>
-    </>
-  )
-}
 
 
 function NewsletterText(){
@@ -56,8 +45,8 @@ export function Newsletter() {
       <Grid.Col sm={5} lg={4}>
         <MediaQuery smallerThan="sm" styles={{ display: 'none' }}>
           <Avatar.Group spacing="20%">
-            <Avatar src={enjoyerTwoSrc} size="70%" radius="100%"/>
-            <Avatar src={enjoyerOneSrc} size="70%" radius="100%"/>
+            <Avatar src={AssetsService.get("enjoyer2")} size="70%" radius="100%"/>
+            <Avatar src={AssetsService.get("enjoyer1")} size="70%" radius="100%"/>
           </Avatar.Group>
         </MediaQuery>
       </Grid.Col>

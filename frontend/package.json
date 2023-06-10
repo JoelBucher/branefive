@@ -18,6 +18,8 @@
     "@types/node": "^16.18.34",
     "@types/react": "^18.2.8",
     "@types/react-dom": "^18.2.4",
+    "dateformat": "^5.0.3",
+    "google-map-react": "^2.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
@@ -49,5 +51,9 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://joelbucher.github.io/branefive/"
+  "homepage": "https://joelbucher.github.io/branefive/",
+  "devDependencies": {
+    "@types/dateformat": "^5.0.0",
+    "@types/google-map-react": "^2.1.7"
+  }
 }
