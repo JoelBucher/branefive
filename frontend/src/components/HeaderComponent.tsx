@@ -28,6 +28,7 @@ export function HeaderResponsive() {
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
       onClick={() => {
         setActive(link.link);
+        close();
       }}
     >
       {translate(link.label)}
@@ -38,7 +39,7 @@ export function HeaderResponsive() {
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
         <Link to={"/"}>
-          <img src={logo} alt="Your SVG" height={45}/>
+          <img src={logo} height={45}/>
         </Link>
         <Group spacing={5} className={classes.links}>
           {items}

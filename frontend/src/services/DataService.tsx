@@ -7,25 +7,26 @@ import { StatsElement } from "../types/StatsElement";
 import data from "../utils/data.json"
 
 export class DataService {
+    data : GlobalData= DataService.loadData();
 
     private static loadData() : GlobalData {
         return data as GlobalData;
     }
 
     public static getHeaderData() : HeaderData{
-        return this.loadData().header;
+        return data.header;
     }
 
     public static getFooterData() : FooterData{
-        return this.loadData().footer;
+        return data.footer;
     }
 
     public static getGroupStatsData() : StatsElement[]{
-        return this.loadData().statistics;
+        return data.statistics;
     }
 
     public static getAlbums() : AlbumType[]{
-        return this.loadData().music.albums;
+        return data.music.albums;
     }
 
     public static getTourData() : TourType {
