@@ -1,13 +1,15 @@
 import type { HeaderData } from "./HeaderData";
-import type { FooterData } from "./FooterData";
-import { StatsElement } from "./StatsElement";
+import type { FooterData } from "../components/Footer/types/FooterData";
 import { MusicType } from "../components/Music/types/MusicType";
 import { TourType } from "../components/Tour/types/TourType";
+import { HeadlineType } from "../components/Home/types/HeadlineType";
+import { BandType } from "../components/Band/types/BandType";
 
 export type GlobalData = {
     header: HeaderData;
-    statistics: StatsElement[];
+    headline: HeadlineType;
     footer: FooterData;
     music: MusicType;
     tour: TourType;
+    band: BandType;
 }

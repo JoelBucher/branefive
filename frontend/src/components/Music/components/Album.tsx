@@ -1,8 +1,7 @@
-import { ScrollArea, Table, Grid, Image, MediaQuery } from '@mantine/core';
+import { ScrollArea, Table, Grid, Image } from '@mantine/core';
 import { useMusicStyle } from '../useMusicStyle';
 import { AlbumType } from '../types/AlbumType';
 import { AssetsService } from '../../../services/AssetsService';
-import { IconCalendar } from '@tabler/icons-react';
 import { translate } from '../../../services/LanguageService';
 
 interface AlbumParameter {

@@ -39,18 +39,17 @@ export function Newsletter() {
   const { classes } = useNewsletterStyle();
   return (
     <Grid align='center' justify='center'>
-      <Grid.Col sm={5} lg={4}>
-        <NewsletterText/>
-      </Grid.Col>
-      <Grid.Col sm={5} lg={4}>
-        <MediaQuery smallerThan="sm" styles={{ display: 'none' }}>
-          <Avatar.Group spacing="20%">
-            <Avatar src={AssetsService.get("enjoyer2")} size="70%" radius="100%"/>
-            <Avatar src={AssetsService.get("enjoyer1")} size="70%" radius="100%"/>
-          </Avatar.Group>
-        </MediaQuery>
-      </Grid.Col>
-      
+        <Grid.Col sm={5} lg={4}>
+          <NewsletterText/>
+        </Grid.Col>
+        <Grid.Col sm={5} lg={4}>
+          <MediaQuery smallerThan="sm" styles={{ display: 'none' }}>
+            <Avatar.Group spacing="20%">
+              <Avatar src={AssetsService.get("enjoyer2")} size="70%" radius="100%"/>
+              <Avatar src={AssetsService.get("enjoyer1")} size="70%" radius="100%"/>
+            </Avatar.Group>
+          </MediaQuery>
+        </Grid.Col>
     </Grid>
   );
 }

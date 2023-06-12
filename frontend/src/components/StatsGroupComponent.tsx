@@ -6,6 +6,7 @@ import { useStatsGroupStyle } from '../hooks/useStatsGroupStyle';
 
 export function StatsGroup() {
   const { classes } = useStatsGroupStyle();
+  /*
   const data : StatsElement[] = DataService.getGroupStatsData();
 
   const stats = data.map((stat) => (
@@ -23,5 +24,7 @@ export function StatsGroup() {
       </Grid.Col>
     </Grid>
   )
+  */
+ return(<></>)
   
 }

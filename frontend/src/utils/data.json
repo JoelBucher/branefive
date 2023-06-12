@@ -7,27 +7,41 @@
             {"link": "/contact", "label": {"en": "Contact", "de": "Kontakt"}}
         ]
     },
-    "statistics": [
-        {
-            "title": {"en": "label en", "de": "label de"},
-            "category": {"en": "Users", "de": "Nutzer"},
-            "description":
-                {
-                    "en": "Description",
-                    "de": "Beschreibung"
-                }
-        },
-        {
-            "title": {"en": "label en", "de": "label de"},
-            "category": {"en": "Users", "de": "Nutzer"},
-            "description":
-                {
-                    "en": "Description",
-                    "de": "Beschreibung"
-                }
-        }
-    ],
+    "headline": {
+        "title": {"en": "We are Branefive!", "de": "Wir sind Branefive!"},
+        "subtitle": {"en": "Subtitle", "de": "Subtitle"},
+        "features": [
+            {
+                "iconAssetId": "playlist",
+                "title": {"en": "Music", "de": "Musik"},
+                "subtitle": {"en": "Subtitle", "de": "Text"},
+                "buttonText": {"en": "explore", "de": "Erkunden"},
+                "link": "/music"
+            },
+            {
+                "iconAssetId": "tour",
+                "title": {"en": "Tour", "de": "Tour"},
+                "subtitle": {"en": "Subtitle", "de": "Text"},
+                "buttonText": {"en": "click", "de": "Daten ansehen"},
+                "link": "/tour"
+            },
+            {
+                "iconAssetId": "band",
+                "title": {"en": "Band", "de": "Band"},
+                "subtitle": {"en": "Subtitle", "de": "Text"},
+                "buttonText": {"en": "Get to know us", "de": "Lerne uns kennen"},
+                "link": "/band"
+            }
+        ]
+    },
     "footer": {
+        "slogan": {"en": "slogan", "de": "Was die chönnd, chömiir scho lang"},
+        "copyright": {"en": "copyright", "de": "© 2023 Branefive. All rights reserved."},
+        "socials": [
+            {"iconAssetId": "instagram", "link": "https://www.instagram.com/branefive/"},
+            {"iconAssetId": "youtube", "link": "https://www.youtube.com/channel/UC1s8bT-0Gx733lNNcngFxrw/videos?app=desktop&view=0&sort=dd&shelf_id=0"},
+            {"iconAssetId": "spotify", "link": "https://open.spotify.com/intl-de/artist/68wrXuSWcgKcqYTyDtLMdH"}
+        ],
         "linkGroups": [
             {
                 "title": "Band",
@@ -106,6 +120,70 @@
                 "description": {"en": "", "de": ""},
                 "date": "2023-07-31T20:00:00Z",
                 "place": {"name": "Wädenswil, CH", "latitude": 0, "longitude": 0}
+            }
+        ]
+    },
+    "band": {
+        "title": {"en": "The Band", "de": "Branefive"},
+        "description": {
+            "en": "The rock band was found in November 2018 in Ermensee, a small town in the canton of Lucerne, Switzerland, by the 3 brothers Noah, Elija and Julian Müller as well as Elias Ruckstuhl. In early 2020, guitarist Suvin Blum joined the band. In winter '23, Manuel Birrer stepped into the band as the new bassist replacing Julian Müller, who can still be enjoyed playing the cornet live. Today, the style of Branefive varies from energetic alternative rock to pretty sensitive stuff, often with a pop structure as a foundation. In addition on live shows, Branefive loves to play covers of classics through the decades. It is an understatement to say that rock means the absolute world to them.",
+            "de": "Die Rockband schlug ihre Wurzeln ende November 2018 in Ermensee und bringt das Seetal heute regelmässig zum beben. Von den drei Brüdern Elija, Noah und Julian Müller sowie Elias Ruckstuhl unter dem Namen \"Armamsee\" gegründet, entdeckte die Band schon früh ihre Liebe für harten und leidenschaftlichen Rock. Seit Frühling 2020 ist auch der virtuose Gitarrist Suvin Blum mit an Bord. Im Winter 2023 hat Manuel Birrer den Bass von Julian Müller übernommen, der live immer noch auf dem Cornet zu bestaunen ist. Heute zeichnen sich die Songs von Branefive mit einer Abwechslung aus energischem Hardrock und gefühlvollen Passagen aus, häufig auf dem Sockel einer Popstruktur. Bei Live-Shows lieben es die Jungs zudem, Rockhymnen aus den vergangenen Jahrzehnten zum Besten zu geben. Der Rock hat ihre Herzen eingenommen und das wird sich auch nicht so schnell ändern."
+        },
+        "members": [
+            {
+                "name": "Elija",
+                "description": {"en": "", "de": "Elija beschreibt es als Glücksfall, dass bei seinem Beitritt zu Branefive der Platz als Solo-Drummer noch vakant war."},
+                "assetId": "elija",
+                "properties": [
+                    {
+                        "iconAssetId": "music",
+                        "description": {"en": "Drums", "de": "Schlagzeug"}
+                    }
+                ]
+            },
+            {
+                "name": "Elias",
+                "description": {"en": "Singer", "de": "Sänger"},
+                "assetId": "elias",
+                "properties": [
+                    {
+                        "iconAssetId": "microphone",
+                        "description": {"en": "", "de": ""}
+                    }
+                ]
+            },
+            {
+                "name": "Noah",
+                "description": {"en": "", "de": ""},
+                "assetId": "noah",
+                "properties": [
+                    {
+                        "iconAssetId": "music",
+                        "description": {"en": "", "de": ""}
+                    }
+                ]
+            },
+            {
+                "name": "Suvin",
+                "description": {"en": "Drummer etc.", "de": "Schlagzeuger etc."},
+                "assetId": "suvin",
+                "properties": [
+                    {
+                        "iconAssetId": "music",
+                        "description": {"en": "Drums", "de": "Schlagzeug"}
+                    }
+                ]
+            },
+            {
+                "name": "Julian",
+                "description": {"en": "Drummer etc.", "de": "Schlagzeuger etc."},
+                "assetId": "julian",
+                "properties": [
+                    {
+                        "iconAssetId": "music",
+                        "description": {"en": "Drums", "de": "Schlagzeug"}
+                    }
+                ]
             }
         ]
     }
