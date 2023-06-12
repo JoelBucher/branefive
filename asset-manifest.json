@@ -1,22 +1,27 @@
 {
   "files": {
     "main.css": "/branefive/static/css/main.073c9b0a.css",
-    "main.js": "/branefive/static/js/main.a87c4c6a.js",
+    "main.js": "/branefive/static/js/main.33986ae4.js",
     "static/js/787.cda612ba.chunk.js": "/branefive/static/js/787.cda612ba.chunk.js",
     "static/media/enjoyer2.png": "/branefive/static/media/enjoyer2.dd267649a1dab36048eb.png",
     "static/media/video.mp4": "/branefive/static/media/video.1698dfae901693528826.mp4",
+    "static/media/elias.jpeg": "/branefive/static/media/elias.5ff674ea7302d51efdc8.jpeg",
+    "static/media/julian.jpeg": "/branefive/static/media/julian.43bad39a3a9254caab93.jpeg",
+    "static/media/elija.jpeg": "/branefive/static/media/elija.67f7dcc1158c7178ae96.jpeg",
+    "static/media/noah.jpeg": "/branefive/static/media/noah.ac21af7c017fde39c5f7.jpeg",
     "static/media/singingInSilence.png": "/branefive/static/media/singingInSilence.dbbfa140e1fad0028f70.png",
     "static/media/richensee.jpeg": "/branefive/static/media/richensee.5961fe7d044f69350217.jpeg",
+    "static/media/suvin.jpeg": "/branefive/static/media/suvin.4a8222f47776139fdfd0.jpeg",
     "static/media/enjoyer1.jpg": "/branefive/static/media/enjoyer1.89003011d12dd95bc50d.jpg",
     "static/media/freeTheAnimalInYou.png": "/branefive/static/media/freeTheAnimalInYou.2ffc55e22e2fa4643f20.png",
     "static/media/branefive_logo.svg": "/branefive/static/media/branefive_logo.8a58a0a6a3ccf0f0e18500951fdd869a.svg",
     "index.html": "/branefive/index.html",
     "main.073c9b0a.css.map": "/branefive/static/css/main.073c9b0a.css.map",
-    "main.a87c4c6a.js.map": "/branefive/static/js/main.a87c4c6a.js.map",
+    "main.33986ae4.js.map": "/branefive/static/js/main.33986ae4.js.map",
     "787.cda612ba.chunk.js.map": "/branefive/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a87c4c6a.js"
+    "static/js/main.33986ae4.js"
   ]
 }
