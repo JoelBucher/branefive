@@ -3,7 +3,6 @@ import { DataService } from "../../../services/DataService";
 import { EventType } from "../types/EventType";
 import { TourType } from "../types/TourType";
 import { DateTimeService } from "../../../services/DateTimeService";
-import dateFormat from "dateformat";
 import { useTourNextEventStyle as useTourStyle } from "../hooks/useTourNextEventStyle";
 
 function getEvents(): EventType[]{

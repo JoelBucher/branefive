@@ -24,14 +24,3 @@ export const useTourcardStyle = createStyles((theme) => ({
       fontWeight: 700,
     },
   }));
-  
-  interface BadgeCardProps {
-    image: string;
-    title: string;
-    country: string;
-    description: string;
-    badges: {
-      emoji: string;
-      label: string;
-    }[];
-  }

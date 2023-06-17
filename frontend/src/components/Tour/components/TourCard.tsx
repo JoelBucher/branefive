@@ -1,12 +1,10 @@
-import { IconHeart } from '@tabler/icons-react';
 import {
   Card,
   Image,
   Text,
   Group,
   Badge,
-  Button,
-  ActionIcon
+  Button
 } from '@mantine/core';
 import { useTourcardStyle } from '../hooks/useTourCardStyle';
 import { AssetsService } from '../../../services/AssetsService';
@@ -18,7 +16,7 @@ export function TourCard(){
     const badges = [{label: "label", emoji: "emoji"}];
     const country = "country";
 
-    const { classes, theme } = useTourcardStyle();
+    const classes = useTourcardStyle().classes;
     
     const features = badges.map((badge) => (
         <Badge

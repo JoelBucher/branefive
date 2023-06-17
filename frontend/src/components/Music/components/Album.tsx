@@ -1,16 +1,13 @@
 import { ScrollArea, Table, Grid, Image } from '@mantine/core';
-import { useMusicStyle } from '../useMusicStyle';
 import { AlbumType } from '../types/AlbumType';
 import { AssetsService } from '../../../services/AssetsService';
-import { translate } from '../../../services/LanguageService';
+import { RenderLanguageText } from '../../../services/useLanguage';
 
 interface AlbumParameter {
     album: AlbumType;
 }
 
 function SongList({album} : AlbumParameter){
-    const { classes, theme } = useMusicStyle();
-
     return <>
         {album.songs.map((song) => {
             return (
@@ -49,7 +46,7 @@ export function Album({album} : AlbumParameter){
             <Grid>
                 <Grid.Col span={8}>
                     <h2>{album.title}</h2>
-                    <p>{translate(album.description)}</p>
+                    <p><RenderLanguageText text = {album.description}/></p>
                 </Grid.Col>
                 <Grid.Col span={4}></Grid.Col>
             </Grid>

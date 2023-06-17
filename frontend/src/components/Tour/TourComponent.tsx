@@ -1,6 +1,5 @@
 import { Grid } from '@mantine/core';
 import { TourTimeline } from './components/TourTimeline';
-import { TourMap } from './components/TourMap';
 import { TourNextEvent } from './components/TourNextEvent';
 import { TourCard } from './components/TourCard';
 

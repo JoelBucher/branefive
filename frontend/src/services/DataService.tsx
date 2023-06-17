@@ -1,14 +1,12 @@
-import { BandType } from "../components/Band/types/BandType";
 import { MemberType } from "../components/Band/types/MemberType";
 import { HeadlineType } from "../components/Home/types/HeadlineType";
 import { AlbumType } from "../components/Music/types/AlbumType";
 import { TourType } from "../components/Tour/types/TourType";
 import { FooterData } from "../components/Footer/types/FooterData";
 import { GlobalData } from "../types/GlobalData";
-import { HeaderData } from "../types/HeaderData";
+import { HeaderData } from "../components/Header/types/HeaderData";
 import { LanguageText } from "../types/LanguageText";
 import data from "../utils/data.json"
-import { FooterLinkGroup } from "../components/Footer/types/FooterLinkGroup";
 
 export class DataService {
     data : GlobalData= DataService.loadData();

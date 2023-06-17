@@ -1,13 +1,13 @@
 import { Text, Container, ActionIcon, Group } from '@mantine/core';
-import { useFooterStyle } from '../../hooks/useFooterStyle'
+import { useFooterStyle } from './hooks/useFooterStyle'
 import { FooterData } from './types/FooterData';
 import { DataService } from '../../services/DataService';
-import { translate } from '../../services/LanguageService';
 import { Link } from 'react-router-dom';
 import { FooterLinkGroup } from './types/FooterLinkGroup';
 import logo from '../../assets/branefive_logo.svg';
 import { SocialLinkType } from './types/SocialLinkType';
 import { IconService } from '../../services/IconService';
+import { RenderLanguageText } from '../../services/useLanguage';
 
 interface FooterLinkGroupParameter {
   group: FooterLinkGroup
@@ -20,7 +20,7 @@ function FooterLink({group} : FooterLinkGroupParameter){
         to={link.link}
         style={{ textDecoration: 'none', color: "white" }}
       >
-        {translate(link.label)}
+        <RenderLanguageText text = {link.label}/>
       </Link>
       <br></br>
     </div>
@@ -42,15 +42,16 @@ function FooterGroup(props : {groups : FooterLinkGroup[]}){
 }
 
 function Socials(props : {socials : SocialLinkType[]}){
-  const socials = props.socials.map(social => {
+  const socials = props.socials.map((social, index) => {
     const Icon = IconService.get(social.iconAssetId);
     
-    if(Icon != undefined){
+    if(Icon !== undefined){
       return(
-        <ActionIcon size={30} component={'a'} href={social.link} mr={10}>
+        <ActionIcon size={30} component={'a'} href={social.link} mr={10} key={index}>
           <Icon size="2rem" stroke={1.2} />
         </ActionIcon>
       )}
+      return(<></>);
     }
   );
 
@@ -65,11 +66,11 @@ export function FooterResponsive() {
         <Container className={classes.inner}>
           <div className={classes.logo}>
             <Link to={"/"}>
-              <img src={logo} height={45}/>
+              <img src={logo} height={45} alt='logo'/>
             </Link>
 
             <Text size="xs" color="dimmed" className={classes.description}>
-              {translate(data.slogan)}
+              <RenderLanguageText text = {data.slogan}/>
             </Text>
           </div>
           <div className={classes.groups}>
@@ -78,7 +79,7 @@ export function FooterResponsive() {
         </Container>
         <Container className={classes.afterFooter}>
           <Text color="dimmed" size="sm">
-            {translate(data.copyright)}
+            <RenderLanguageText text = {data.copyright}/>
           </Text>
   
           <Group spacing={0} className={classes.social} position="right" noWrap>

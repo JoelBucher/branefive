@@ -1,7 +1,7 @@
 import { IconBrandInstagram, IconBrandSpotify, IconBrandYoutube, IconDirections, IconMicrophone2, IconMusic, IconPlaylist, IconUsersGroup, TablerIconsProps } from "@tabler/icons-react";
 
 export function loadAssets(){
-    var assets = new Map;
+    var assets = new Map();
 
     assets.set('enjoyer1', require("../assets/enjoyer1.jpg"));
     assets.set('enjoyer2', require("../assets/enjoyer2.png"));
@@ -22,7 +22,7 @@ export function loadAssets(){
 // select icons from Tabler Icons set
 // see https://tabler-icons.io/
 export function loadIcons(){
-    var icons = new Map<string,(props: TablerIconsProps) => JSX.Element>;
+    var icons = new Map<string,(props: TablerIconsProps) => JSX.Element>();
     icons.set('playlist', IconPlaylist)
     icons.set('tour', IconDirections)
     icons.set('band', IconUsersGroup)

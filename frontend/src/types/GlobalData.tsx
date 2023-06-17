@@ -1,4 +1,4 @@
-import type { HeaderData } from "./HeaderData";
+import type { HeaderData } from "../components/Header/types/HeaderData";
 import type { FooterData } from "../components/Footer/types/FooterData";
 import { MusicType } from "../components/Music/types/MusicType";
 import { TourType } from "../components/Tour/types/TourType";

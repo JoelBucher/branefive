@@ -1,5 +1,4 @@
-import {rem} from '@mantine/core'
-import { DurationType } from '../types/DurationType'
+import { DurationType } from '../components/Tour/types/DurationType'
 
 export const HEADER_HEIGHT = "60px"
 

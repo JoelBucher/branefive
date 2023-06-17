@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { Grid, Text } from '@mantine/core';
+import { Text } from '@mantine/core';
 import { EventType } from "../types/EventType";
-import { useNewsletterStyle } from "../../../hooks/useNewsletterStyle";
+import { useNewsletterStyle } from "../../Newsletter/hooks/useNewsletterStyle";
 
 interface EventParameter {
   deadline: EventType

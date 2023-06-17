@@ -1,27 +1,26 @@
 import { Card, Center, Grid } from "@mantine/core";
 import { Carousel } from '@mantine/carousel';
 import { AssetsService } from "../../services/AssetsService";
-import { Icon24Hours } from "@tabler/icons-react";
-import { BandType } from "./types/BandType";
 import { DataService } from "../../services/DataService";
 import { LanguageText } from "../../types/LanguageText";
-import { translate } from "../../services/LanguageService";
 import { MemberType } from "./types/MemberType";
 import { MemberPropertyType } from "./types/MemberPropertyType";
 import { IconService } from "../../services/IconService";
+import { RenderLanguageText } from "../../services/useLanguage";
 
 function MemberPropertyTable(props : {properties : MemberPropertyType[]}){
 
     const tableRows = props.properties.map((property, index) => {
         const Icon = IconService.get(property.iconAssetId);
-        if(Icon != undefined){
+        if(Icon !== undefined){
             return(
                 <tr key={index}>
                     <td><Icon/></td>
-                    <td>{translate(property.description)}</td>
+                    <td><RenderLanguageText text = {property.description}/></td>
                 </tr>
             )
         }
+        return(<></>);
     });
 
     return(
@@ -36,19 +35,19 @@ function MemberPropertyTable(props : {properties : MemberPropertyType[]}){
 function Slides(){
     const members : MemberType[] = DataService.getBandMembers();
     
-    const slides = members.map((member, index) => 
+    const slides = members.map((member, index) =>
         <Carousel.Slide key={index}>
             <Card radius={10} style={{height: "100%"}}>
                 <Grid>
                     <Grid.Col md={6} lg={5}>
                         <Center>
-                            <img src={AssetsService.get(member.assetId)} style={{width: "100%", maxWidth: "300px", borderRadius: 10}}/>
+                            <img alt={member.name} src={AssetsService.get(member.assetId)} style={{width: "100%", maxWidth: "300px", borderRadius: 10}}/>
                         </Center>
                     </Grid.Col>
                     <Grid.Col md={6} lg={7}>
                         <h2>{member.name}</h2>
                         <MemberPropertyTable properties = {member.properties}/>
-                        <p>{translate(member.description)}</p>
+                        <p><RenderLanguageText text = {member.description}/></p>
                     </Grid.Col>
                 </Grid>
             </Card>
@@ -64,8 +63,10 @@ export function BandHeader(){
     return(
         <Grid justify="center">
             <Grid.Col span={8}>
-                <h1>{translate(title)}</h1>
-                <p style={{textAlign: "justify"}}>{translate(description)}</p>
+                <h1>
+                    <RenderLanguageText text = {title}/>
+                </h1>
+                <p style={{textAlign: "justify"}}><RenderLanguageText text = {description}/></p>
             </Grid.Col>
         </Grid>
     )

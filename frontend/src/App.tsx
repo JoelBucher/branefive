@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import { HeaderResponsive } from './components/HeaderComponent';
+import { HeaderResponsive } from './components/Header/HeaderComponent';
 import { MantineProvider } from '@mantine/core';
 import { FooterResponsive } from './components/Footer/FooterComponent';
-import { ContactUs } from './components/ContactUsComponent';
+import { ContactUs } from './components/Contact/ContactUsComponent';
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'  
-import { Newsletter } from './components/NewsletterComponent';
+import { Newsletter } from './components/Newsletter/NewsletterComponent';
 import { Music } from './components/Music/MusicComponent';
 import { Home } from './components/Home/Components/HomeComponent';
 import { Tour } from './components/Tour/TourComponent';

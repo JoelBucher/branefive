@@ -8,12 +8,13 @@ import {
   Transition,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { HEADER_HEIGHT } from '../utils/constants';
-import { useHeaderStyles } from '../hooks/useHeaderStyles';
-import { DataService } from '../services/DataService';
-import { translate } from '../services/LanguageService';
+import { HEADER_HEIGHT } from '../../utils/constants';
+import { useHeaderStyles } from './hooks/useHeaderStyles';
+import { DataService } from '../../services/DataService';
 import { Link } from 'react-router-dom';
-import logo from '../assets/branefive_logo.svg';
+import logo from '../../assets/branefive_logo.svg';
+import { LanguageIcons } from './components/LanguageIcons';
+import { RenderLanguageText } from '../../services/useLanguage';
 
 export function HeaderResponsive() {
   const links = DataService.getHeaderData().links;
@@ -31,7 +32,7 @@ export function HeaderResponsive() {
         close();
       }}
     >
-      {translate(link.label)}
+      <RenderLanguageText text = {link.label}/>
     </Link>
   );
 
@@ -39,11 +40,13 @@ export function HeaderResponsive() {
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
         <Link to={"/"}>
-          <img src={logo} height={45}/>
+          <img src={logo} height={45} alt="logo"/>
         </Link>
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
+        
+        <LanguageIcons/>
 
         <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
 

@@ -9,7 +9,7 @@ import {
   Grid,
 } from '@mantine/core';
 import { IconPhone, IconMapPin, IconAt } from '@tabler/icons-react';
-import { useContactUsStyle } from '../hooks/useContactUsStyle';
+import { useContactUsStyle } from './hooks/useContactUsStyle';
 
 export function ContactUs() {
     const { classes } = useContactUsStyle();

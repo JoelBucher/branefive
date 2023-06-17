@@ -1,7 +1,6 @@
-import { Container, Text, Button, Group, Image, Grid, Avatar, MediaQuery } from '@mantine/core';
-import { GithubIcon } from '@mantine/ds';
-import { useNewsletterStyle } from '../hooks/useNewsletterStyle';
-import { AssetsService } from '../services/AssetsService';
+import { Text, Button, Group, Grid, Avatar, MediaQuery } from '@mantine/core';
+import { useNewsletterStyle } from './hooks/useNewsletterStyle';
+import { AssetsService } from '../../services/AssetsService';
 
 
 
@@ -36,7 +35,6 @@ function NewsletterText(){
 }
 
 export function Newsletter() {
-  const { classes } = useNewsletterStyle();
   return (
     <Grid align='center' justify='center'>
         <Grid.Col sm={5} lg={4}>

@@ -1,7 +1,7 @@
 import { AssetsService } from "../../../services/AssetsService";
 import logo from '../../../assets/branefive_logo.svg';
 import { HEADER_HEIGHT } from "../../../utils/constants";
-import { ActionIcon, Grid, Group, MediaQuery, Text, rem } from "@mantine/core";
+import { ActionIcon, Grid, MediaQuery } from "@mantine/core";
 import { useViewportSize, useWindowScroll } from '@mantine/hooks';
 import { IconChevronDown } from "@tabler/icons-react";
 
@@ -9,18 +9,18 @@ function DynamicLogo(){
     return(
         <>
         <MediaQuery query="(max-width: 60em)" styles={{display: "none"}}>
-            <img src={logo} style={{position: "absolute", zIndex: 0, width: "30%", top: "10%", left: "10%"}}/>
+            <img src={logo} style={{position: "absolute", zIndex: 0, width: "30%", top: "10%", left: "10%"}} alt="logo"/>
         </MediaQuery>
         <MediaQuery query="(min-width: 60em)" styles={{display: "none"}}>
-            <img src={logo} style={{position: "absolute", zIndex: 0, width: "60%", top: "10%", left: "20%"}}/>
+            <img src={logo} style={{position: "absolute", zIndex: 0, width: "60%", top: "10%", left: "20%"}} alt="logo"/>
         </MediaQuery>
         </>
     )
 }
 
 function ScrollDownButton(){
-    const [scroll, scrollTo] = useWindowScroll();
-    const { height, width } = useViewportSize();
+    const scrollTo = useWindowScroll()[1];
+    const height = useViewportSize().height;
     return(
         <Grid justify="center" style={{marginTop: height - 140}}>
             <ActionIcon onClick={() => scrollTo({ y:  height})} size={70}>

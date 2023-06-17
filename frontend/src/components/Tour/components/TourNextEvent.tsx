@@ -4,7 +4,6 @@ import { EventType } from "../types/EventType";
 import { TourType } from "../types/TourType";
 import { TourCountdown } from "./TourCountdown";
 import { IconMapPin, IconClock} from '@tabler/icons-react';
-import dateFormat, { masks } from "dateformat";
 import { useTourNextEventStyle } from "../hooks/useTourNextEventStyle";
 import { DateTimeService } from "../../../services/DateTimeService";
 
