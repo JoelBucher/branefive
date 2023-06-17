@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/branefive/static/css/main.073c9b0a.css",
-    "main.js": "/branefive/static/js/main.4623154f.js",
+    "main.js": "/branefive/static/js/main.6b99954a.js",
     "static/js/787.cda612ba.chunk.js": "/branefive/static/js/787.cda612ba.chunk.js",
     "static/media/enjoyer2.png": "/branefive/static/media/enjoyer2.dd267649a1dab36048eb.png",
     "static/media/video.mp4": "/branefive/static/media/video.1698dfae901693528826.mp4",
@@ -14,14 +14,15 @@
     "static/media/suvin.jpeg": "/branefive/static/media/suvin.4a8222f47776139fdfd0.jpeg",
     "static/media/enjoyer1.jpg": "/branefive/static/media/enjoyer1.89003011d12dd95bc50d.jpg",
     "static/media/freeTheAnimalInYou.png": "/branefive/static/media/freeTheAnimalInYou.2ffc55e22e2fa4643f20.png",
+    "static/media/404.svg": "/branefive/static/media/404.8585a015c6393279c8c1a768e5f49dd9.svg",
     "static/media/branefive_logo.svg": "/branefive/static/media/branefive_logo.8a58a0a6a3ccf0f0e18500951fdd869a.svg",
     "index.html": "/branefive/index.html",
     "main.073c9b0a.css.map": "/branefive/static/css/main.073c9b0a.css.map",
-    "main.4623154f.js.map": "/branefive/static/js/main.4623154f.js.map",
+    "main.6b99954a.js.map": "/branefive/static/js/main.6b99954a.js.map",
     "787.cda612ba.chunk.js.map": "/branefive/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.4623154f.js"
+    "static/js/main.6b99954a.js"
   ]
 }
