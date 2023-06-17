@@ -32,7 +32,11 @@ function ScrollDownButton(){
 
 function BackgroundVideo(){
     return(
-        <video autoPlay muted loop style={{minHeight: '100%', minWidth: "100%", position: "absolute"}}>
+        <video
+        id="heroVideo"
+        autoPlay muted loop
+        style={{minHeight: '100%', minWidth: "100%", position: "absolute"}}>
+
             <source src={AssetsService.get('video')} type="video/mp4"/>
         </video>
     )
@@ -47,7 +51,3 @@ export function Hero(){
         </div>
     );
 }
-
-/*
-<h1 style={{position: "absolute", zIndex: 1, color: "white", top: "60%", left: "10%"}}>Rock made in Seetal</h1>
-*/

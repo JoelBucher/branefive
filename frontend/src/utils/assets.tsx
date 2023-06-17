@@ -15,6 +15,7 @@ export function loadAssets(){
     assets.set('suvin', require('../assets/suvin.jpeg'))
     assets.set('noah', require('../assets/noah.jpeg'))
     assets.set('julian', require('../assets/julian.jpeg'))
+    assets.set('404', require('../assets/404.svg'))
 
     return assets;
 }

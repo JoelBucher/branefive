@@ -3,16 +3,17 @@ import { HeadlineType } from "../components/Home/types/HeadlineType";
 import { AlbumType } from "../components/Music/types/AlbumType";
 import { TourType } from "../components/Tour/types/TourType";
 import { FooterData } from "../components/Footer/types/FooterData";
-import { GlobalData } from "../types/GlobalData";
+import { WebsiteData } from "../types/WebsiteData";
 import { HeaderData } from "../components/Header/types/HeaderData";
 import { LanguageText } from "../types/LanguageText";
 import data from "../utils/data.json"
+import { StoryType } from "../components/Story/types/StoryType";
 
 export class DataService {
-    data : GlobalData= DataService.loadData();
+    data : WebsiteData= DataService.loadData();
 
-    private static loadData() : GlobalData {
-        return data as GlobalData;
+    private static loadData() : WebsiteData {
+        return data as WebsiteData;
     }
 
     public static getHeaderData() : HeaderData{
@@ -45,5 +46,9 @@ export class DataService {
 
     public static getBandTitle() : LanguageText {
         return data.band.title;
+    }
+
+    public static getStory(storyId : string | undefined) : StoryType | undefined {
+        return data.news.stories.find(story => story.storyId === storyId);
     }
 }

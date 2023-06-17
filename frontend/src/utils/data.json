@@ -186,5 +186,106 @@
                 ]
             }
         ]
+    },
+    "news": {
+        "stories": [
+            {
+                "storyId": "summer-2023",
+                "blocks":[
+                    {
+                        "title": {
+                            "en": "BRANEFIVE in Summer of '23",
+                            "de": "BRANEFIVE im Sommer '23"
+                        }
+                    },
+                    {
+                        "text": {
+                            "en": "It's all about gigs and songwriting this summer for Branefive. The young guys from Seetal can be met on stage inside and outside their territory. Click on \"Tour\" for their future concerts and come visit us! See you, meanwhile we are laying the foundation for our first big album. Branefive out!",
+                            "de": "Gigs und Songwriting steht auch diesen Sommer wieder auf der Bucketlist der Band. Die jungen Seetaler sind in- und ausserhalb ihrer Heimat auf Bühnen anzutreffen, schau unter \"Tours\" vorbei, wir freuen uns auf dich! Ein paar neue Songs werden ihre Uraufführung feiern und du geniesst heissen Rock zu einem kühlen Bier. Bis dann, wir betonieren unterdessen den Sockel für das erste grosse Album :)"
+                        }
+                    }
+                ]
+            },
+            {
+                "storyId": "singin-in-silence",
+                "blocks":[
+                    {
+                        "title": {
+                            "en": "SINGIN' IN SILENCE is here!",
+                            "de": "BRANEFIVE im Sommer '23"
+                        }
+                    },
+                    {
+                        "text": {
+                            "en": "The five boys are thriving right now and so should be you. Finally, the EP \"Singin' in Silence\" is released since October 7th, 2022! Containing 6 masterpieces of versatile Rock, Branefive brings again a lot of teen spirit. Of course, you're not gonna miss the music video about our title song on YouTube either!",
+                            "de": "Endlich ist sie da, die neue EP \"Singin' in Silence von Branefive. Sechs Songs, alle mit viel Herz und jugendlichem Übermut geschrieben, recorded, gemixt und gemastert und jetzt auch released. Natürlich fehlt auch das Musikvideo zum Titelsong nicht - ihr findet es gleich unterhalb. Die EP ist ab sofort auf allen möglichen Stores und Kanälen hör- und sehbar. Enjoy!"
+                        }
+                    },
+                    {"space": 50},
+                    {
+                        "url": "https://www.youtube.com/embed/2est0vtRxCU"
+                    }
+                ]
+            },
+            {
+                "storyId": "jahresrueckblick",
+                "blocks":[
+                    {
+                        "title": {
+                            "en": "",
+                            "de": "Jahresrückblick 2021: Grosses Merci und kleiner Ausblick"
+                        }
+                    },
+                    {
+                        "text": {
+                            "en": "Text not availabe in english.",
+                            "de": "Am 23. Oktober 2021 durften wir endlich öffentlich unsere Klänge zum Besten geben. Wir sagen herzlich Danke bei allen, die tatkräftig mitgeholfen haben, dieses Konzert zu verwirklichen und natürlich bei allen Zuhörenden. Unser erster eigens organisierter Anlass brachte Jung und Alt zusammen und die Musik zurück, wo sie hingehört - live auf die Bühne. Nach einem weiteren Bandjahr, in dem wir besonders in musikalischer Hinsicht kräftig wachsen konnten, wird Branefive im November dreijährig. Die ganz grosse Bühne wartet zwar im Moment noch, unsere verschworene Truppe hat aber nun so einiges vor: Im Frühjar 2022 wollen wir die lang ersehnte EP aufnehmen und rausbringen! Mit dabei sein sollen unter anderem Singin' in the Silence und Meant to Be, die ihr auch schon live erleben durftet. Dies als kleiner Vorgeschmack. Denn wenn Corona endlich vorbei ist, können wir uns nur noch selber aufhalten ;)"
+                        }
+                    }
+                ]
+            },
+            {
+                "storyId": "christmas-wishes-2021",
+                "blocks":[
+                    {
+                        "title": {
+                            "en": "December 2021: Branefive is back",
+                            "de": "Dezember 2021: Weihnachtliche Grüsse von Branefive"
+                        }
+                    },
+                    {
+                        "text": {
+                            "en": "Right on Christmas eve, Branefive is back! Nonetheless, covering Mariah Carey's absolute classic \"All I Want For Christmas Is You\". It is the project to end an important year for us. We took up songwriting in spring, released our first single in late summer and had time to plan our first EP in 2021 as well as doing projects like this cover (which was actually pretty funny to film and record). We would like to thank our friends and families for their fabulous support wherever we needed it. A big Thank You also to our donors, who made the release of our first single even possible, to the shortwave radios Channel 292 and WRMI, and last but not least, to our listeners and viewers from all over the globe. And now, we wish you a merry Christmas with \"All I Want For Christmas Is You\"!",
+                            "de": "Pünktlich zu Weihnachten sind wir zurück - mit einem Cover des absoluten Klassikers \"All I Want For Christmas Is You\" von Mariah Carey. Wir bringen damit ein Jahr zu Ende, in dem Branefive die erste Single veröffentlicht hat, an einer EP für das nächste Jahr schrieb und zwischendurch auch einfach nur solche Ideen wie diese hier hatte. Wir bedanken uns ganz herzlich bei unseren Freunden und Familien, die uns bei all unseren Projekten mit viel Herzblut unterstützt haben. Ein grosses Merci auch an unsere Spender, die den Release der Single erst ermöglicht hatten, an die Kurzwellen-Radiosender Channel 292 und WRMI und natürlich an unsere Hörer und Zuschauer aus der ganzen Welt. Und jetzt wünschen wir euch erholsame Weihnachten mit \"All I Want For Christmas Is You\"!"
+                        }
+                    },
+                    {"space": 50},
+                    {
+                        "url": "https://www.youtube.com/embed/nOiZzYpirEg"
+                    }
+                ]
+            },
+            {
+                "storyId": "free-the-animal-in-you",
+                "blocks":[
+                    {
+                        "title": {
+                            "en": "September 2020: Our first single",
+                            "de": "September 2020: Unsere Erste Single!"
+                        }
+                    },
+                    {
+                        "text": {
+                            "en": "\"Free the Animal in You\" is their first single. It's a message written not from the head but from the heart. And it shall not free butterflies, much more a real animal, a predator. Like a bear or a lion. And this predator will wake up when you dive into the song. Promised.",
+                            "de": "«Free The Animal In You» heisst ihre erste Single - Befreie das Tier in dir. Es ist eine Botschaft, die aus dem Bauch herausgeschrieben wurde. Sie soll aber keine Schmetterlinge im Bauch wecken, sondern ein richtiges Tier, ein Raubtier. Ein Bär oder ein Löwe vielleicht. Und dieses Tier wird wach, sobald Du in den Song tauchst. Versprochen."
+                        }
+                    },
+                    {"space": 50},
+                    {
+                        "url": "https://www.youtube.com/embed/ojeFN2xTFvs"
+                    }
+                ]
+            }
+        ]
     }
 }

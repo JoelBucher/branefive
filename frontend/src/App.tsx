@@ -10,30 +10,29 @@ import { Music } from './components/Music/MusicComponent';
 import { Home } from './components/Home/Components/HomeComponent';
 import { Tour } from './components/Tour/TourComponent';
 import { Band } from './components/Band/BandComponent';
-
-const NoPage = () => {
-  return <p>This is not a NoPage</p>;
-};
+import { StoryComponent } from './components/Story/StoryComponent';
+import { NotFoundComponent } from './components/NotFound/NotFoundComponent';
 
 function App() {
   return (
-    <>
-    <MantineProvider theme={{ colorScheme: 'dark' }} withGlobalStyles>
-      <Router>  
-        <HeaderResponsive/>
-          <Routes>
-              <Route path="" element={<Home/>}/>
-              <Route path="newsletter" element={<Newsletter/>}/>
-              <Route path="tour" element={<Tour/>}/>
-              <Route path="contact" element={<ContactUs/>}/>
-              <Route path="music" element={<Music/>}/>
-              <Route path="band" element={<Band/>}/>
-              <Route path="*" element={<NoPage/>}/>
-          </Routes>
-          <FooterResponsive/>
-        </Router>
-    </MantineProvider>
-    </>
+    <div style={{overflow: 'hidden'}}>
+      <MantineProvider theme={{ colorScheme: 'dark' }} withGlobalStyles>
+        <Router>  
+          <HeaderResponsive/>
+            <Routes>
+                <Route path="" element={<Home/>}/>
+                <Route path="newsletter" element={<Newsletter/>}/>
+                <Route path="tour" element={<Tour/>}/>
+                <Route path="contact" element={<ContactUs/>}/>
+                <Route path="music" element={<Music/>}/>
+                <Route path="band" element={<Band/>}/>
+                <Route path="news/:storyId" element={<StoryComponent/>}/>
+                <Route path="*" element={<NotFoundComponent/>}/>
+            </Routes>
+            <FooterResponsive/>
+          </Router>
+      </MantineProvider>
+    </div>
   );
 }
 

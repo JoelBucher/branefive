@@ -4,12 +4,14 @@ import { MusicType } from "../components/Music/types/MusicType";
 import { TourType } from "../components/Tour/types/TourType";
 import { HeadlineType } from "../components/Home/types/HeadlineType";
 import { BandType } from "../components/Band/types/BandType";
+import { NewsType } from "../components/Story/types/NewsType";
 
-export type GlobalData = {
+export type WebsiteData = {
     header: HeaderData;
     headline: HeadlineType;
     footer: FooterData;
     music: MusicType;
     tour: TourType;
     band: BandType;
+    news: NewsType;
 }
