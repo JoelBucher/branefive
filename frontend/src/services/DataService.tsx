@@ -8,6 +8,7 @@ import { HeaderData } from "../components/Header/types/HeaderData";
 import { LanguageText } from "../types/LanguageText";
 import data from "../utils/data.json"
 import { StoryType } from "../components/Story/types/StoryType";
+import { NewsCardType } from "../components/News/types/NewsCardType";
 
 export class DataService {
     data : WebsiteData= DataService.loadData();
@@ -50,5 +51,9 @@ export class DataService {
 
     public static getStory(storyId : string | undefined) : StoryType | undefined {
         return data.news.stories.find(story => story.storyId === storyId);
+    }
+
+    public static getNewsCards() : StoryType[] {
+        return data.news.stories;
     }
 }

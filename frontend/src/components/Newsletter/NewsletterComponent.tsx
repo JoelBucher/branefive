@@ -21,14 +21,16 @@ function NewsletterText(){
         </Text>
 
         <Group className={classes.controls}>
-          <Button
-            size="xl"
-            className={classes.control}
-            variant="gradient"
-            gradient={{ from: 'red', to: 'red' }}
-          >
-            Join now!
-          </Button>
+            <Button
+              size="xl"
+              component="a"
+              href="https://chat.whatsapp.com/KgRlScf3rUMH1B4Ycu1VfS"
+              className={classes.control}
+              variant="gradient"
+              gradient={{ from: 'red', to: 'red' }}
+            >
+              Join now!
+            </Button>
         </Group>
         </>
   )

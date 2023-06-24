@@ -1,10 +1,8 @@
 import { LanguageText } from "../../../types/LanguageText";
-import { StoryBlockType } from "./StoryBlockType";
 
-export type StoryType = {
-    storyId: string,
+export type NewsCardType = {
     title: LanguageText,
+    storyId: string,
     storyCardImage: string,
     date: string,
-    blocks: StoryBlockType[],
 }

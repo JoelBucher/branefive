@@ -191,6 +191,9 @@
         "stories": [
             {
                 "storyId": "summer-2023",
+                "title": {"en": "BRANEFIVE in Summer of '23", "de": "BRANEFIVE im Sommer '23"},
+                "storyCardImage": "richensee",
+                "date": "2. März 2023",
                 "blocks":[
                     {
                         "title": {
@@ -208,11 +211,14 @@
             },
             {
                 "storyId": "singin-in-silence",
+                "title": {"en": "SINGIN' IN SILENCE is here!", "de": "SINGIN' IN SILENCE ist da!"},
+                "storyCardImage": "richensee",
+                "date": "23. Januar 2023",
                 "blocks":[
                     {
                         "title": {
                             "en": "SINGIN' IN SILENCE is here!",
-                            "de": "BRANEFIVE im Sommer '23"
+                            "de": "SINGIN' IN SILENCE ist da!"
                         }
                     },
                     {
@@ -229,6 +235,9 @@
             },
             {
                 "storyId": "jahresrueckblick",
+                "title": {"en": "", "de": ""},
+                "storyCardImage": "richensee",
+                "date": "11. Dezember 2022",
                 "blocks":[
                     {
                         "title": {
@@ -246,6 +255,9 @@
             },
             {
                 "storyId": "christmas-wishes-2021",
+                "title": {"en": "", "de": ""},
+                "storyCardImage": "richensee",
+                "date": "21. Dezember 2021",
                 "blocks":[
                     {
                         "title": {
@@ -267,6 +279,9 @@
             },
             {
                 "storyId": "free-the-animal-in-you",
+                "title": {"en": "", "de": ""},
+                "storyCardImage": "richensee",
+                "date": "23. September 2021",
                 "blocks":[
                     {
                         "title": {

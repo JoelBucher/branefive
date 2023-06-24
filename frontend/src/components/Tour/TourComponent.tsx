@@ -12,7 +12,7 @@ export function Tour() {
         <TourTimeline/>
       </Grid.Col>
       <Grid.Col span={4}>
-        <TourCard/>
+        
       </Grid.Col>
     </Grid>
     </>

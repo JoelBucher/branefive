@@ -5,6 +5,7 @@ import { TourType } from "../components/Tour/types/TourType";
 import { HeadlineType } from "../components/Home/types/HeadlineType";
 import { BandType } from "../components/Band/types/BandType";
 import { NewsType } from "../components/Story/types/NewsType";
+import { NewsCardType } from "../components/News/types/NewsCardType";
 
 export type WebsiteData = {
     header: HeaderData;
@@ -13,5 +14,5 @@ export type WebsiteData = {
     music: MusicType;
     tour: TourType;
     band: BandType;
-    news: NewsType;
+    news: NewsType & NewsCardType;
 }
