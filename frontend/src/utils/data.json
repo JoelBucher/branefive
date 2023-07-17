@@ -4,7 +4,8 @@
             {"link": "/", "label": {"en": "Home", "de": "Home"}},
             {"link": "/band", "label": {"en": "Band", "de": "Band"}},
             {"link": "/tour", "label": {"en": "Tour", "de": "Tour"}},
-            {"link": "/contact", "label": {"en": "Contact", "de": "Kontakt"}}
+            {"link": "/contact", "label": {"en": "Contact", "de": "Kontakt"}},
+            {"link": "/music", "label": {"en": "Discography", "de": "Diskographie"}}
         ]
     },
     "headline": {
@@ -12,7 +13,7 @@
         "subtitle": {"en": "Subtitle", "de": "Subtitle"},
         "features": [
             {
-                "iconAssetId": "playlist",
+                "iconAssetId": "newIcon",
                 "title": {"en": "Music", "de": "Musik"},
                 "subtitle": {"en": "Subtitle", "de": "Text"},
                 "buttonText": {"en": "explore", "de": "Erkunden"},
@@ -46,8 +47,8 @@
             {
                 "title": "Band",
                 "links": [
-                    {"label": {"en": "Band", "de": "Band"}, "link": "/band"},
-                    {"label": {"en": "Tour", "de": "Tour"}, "link": "/tour"}
+                    {"link": "/band", "label": {"en": "Band", "de": "Band"}},
+                    {"link": "/tour", "label": {"en": "Tour", "de": "Tour"}}
                 ]
             },
             {

@@ -8,7 +8,6 @@ import { HeaderData } from "../components/Header/types/HeaderData";
 import { LanguageText } from "../types/LanguageText";
 import data from "../utils/data.json"
 import { StoryType } from "../components/Story/types/StoryType";
-import { NewsCardType } from "../components/News/types/NewsCardType";
 
 export class DataService {
     data : WebsiteData= DataService.loadData();
