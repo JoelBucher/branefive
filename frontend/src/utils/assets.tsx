@@ -1,4 +1,4 @@
-import { IconBrandInstagram, IconBrandSpotify, IconBrandYoutube, IconDirections, IconMicrophone2, IconMusic, IconPlaylist, IconUsersGroup, TablerIconsProps } from "@tabler/icons-react";
+import { IconActivity, IconBrandInstagram, IconBrandSpotify, IconBrandYoutube, IconDirections, IconMicrophone2, IconMusic, IconPlaylist, IconUsersGroup, TablerIconsProps } from "@tabler/icons-react";
 
 export function loadAssets(){
     var assets = new Map();
@@ -32,6 +32,8 @@ export function loadIcons(){
     icons.set('spotify', IconBrandSpotify)
     icons.set('youtube', IconBrandYoutube)
     icons.set('instagram', IconBrandInstagram)
+    icons.set('newIcon', IconActivity)
+    
 
     return icons;
 }

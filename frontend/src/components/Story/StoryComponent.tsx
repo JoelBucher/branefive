@@ -12,7 +12,7 @@ import { SubtitleComponent } from "./components/SubtitleComponent";
 import { TextComponent } from "./components/TextComponent";
 import { ImageComponent } from "./components/ImageComponent";
 import { YoutubeComponent } from "./components/YoutubeComponent";
-import { Grid, SpaceProps } from "@mantine/core";
+import { Grid } from "@mantine/core";
 import { SpaceStoryType, isSpaceStoryType } from "./types/blocks/SpaceStoryType";
 import { SpaceComponent } from "./components/SpaceComponent";
 
