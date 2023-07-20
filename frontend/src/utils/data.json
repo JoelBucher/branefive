@@ -8,7 +8,7 @@
         ]
     },
     "headline": {
-        "title": {"en": "Besch du e Transe!", "de": "Wir sind Branefive!"},
+        "title": {"en": "We are Branefive!", "de": "Wir sind Branefive!"},
         "subtitle": {"en": "Subtitle", "de": "Subtitle"},
         "features": [
             {
@@ -21,14 +21,14 @@
             {
                 "iconAssetId": "tour",
                 "title": {"en": "Tour", "de": "Tour"},
-                "subtitle": {"en": "Subtitle", "de": "Text"},
+                "subtitle": {"en": "LIVE SHOWS", "de": "LIVE SHOWS"},
                 "buttonText": {"en": "click", "de": "Daten ansehen"},
                 "link": "/tour"
             },
             {
                 "iconAssetId": "band",
                 "title": {"en": "Band", "de": "Band"},
-                "subtitle": {"en": "Subtitle", "de": "Text"},
+                "subtitle": {"en": "Who we are", "de": "Wer wir sind"},
                 "buttonText": {"en": "Get to know us", "de": "Lerne uns kennen"},
                 "link": "/band"
             }
