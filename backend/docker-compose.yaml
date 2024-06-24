@@ -13,17 +13,15 @@ services:
       - ./express:/usr/src/app
   postgres:
     image: postgres:latest
-    env_file:
-      - .env-dev
-    ports:
-      - "5432:5432"
-    volumes:
-      - ./postgres:/var/lib/postgresql/data
-  pg-admin:
-    image: dpage/pgadmin4
-    container_name: pgadmin4_container
     restart: always
     env_file:
       - .env-dev
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
     ports:
-      - "8888:80"
+      - "5432:5432"
+  adminer:
+      image: adminer
+      restart: always
+      ports:
+        - 8080:8080
