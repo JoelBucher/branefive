@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/branefive/static/css/main.073c9b0a.css",
-    "main.js": "/branefive/static/js/main.3be75c81.js",
+    "main.css": "/branefive/static/css/main.2ca323dd.css",
+    "main.js": "/branefive/static/js/main.a96958a7.js",
     "static/js/787.cda612ba.chunk.js": "/branefive/static/js/787.cda612ba.chunk.js",
+    "static/media/tour.jpg": "/branefive/static/media/tour.e1ecf998d1606307a2c8.jpg",
     "static/media/enjoyer2.png": "/branefive/static/media/enjoyer2.dd267649a1dab36048eb.png",
+    "static/media/portrait.jpg": "/branefive/static/media/portrait.5ee093fa394e852a49ad.jpg",
     "static/media/video.mp4": "/branefive/static/media/video.1698dfae901693528826.mp4",
     "static/media/elias.jpeg": "/branefive/static/media/elias.5ff674ea7302d51efdc8.jpeg",
     "static/media/julian.jpeg": "/branefive/static/media/julian.43bad39a3a9254caab93.jpeg",
@@ -14,15 +16,19 @@
     "static/media/suvin.jpeg": "/branefive/static/media/suvin.4a8222f47776139fdfd0.jpeg",
     "static/media/enjoyer1.jpg": "/branefive/static/media/enjoyer1.89003011d12dd95bc50d.jpg",
     "static/media/freeTheAnimalInYou.png": "/branefive/static/media/freeTheAnimalInYou.2ffc55e22e2fa4643f20.png",
+    "static/media/landscape.jpg": "/branefive/static/media/landscape.99db72014a4f4940469a.jpg",
     "static/media/404.svg": "/branefive/static/media/404.8585a015c6393279c8c1a768e5f49dd9.svg",
+    "static/media/cap.jpg": "/branefive/static/media/cap.4728d1a5d50689d7763f.jpg",
+    "static/media/hoodie.webp": "/branefive/static/media/hoodie.77e8b5e8c5c34df52f8e.webp",
+    "static/media/sticker.png": "/branefive/static/media/sticker.4fe1fdb0e116055bed16.png",
     "static/media/branefive_logo.svg": "/branefive/static/media/branefive_logo.8a58a0a6a3ccf0f0e18500951fdd869a.svg",
     "index.html": "/branefive/index.html",
-    "main.073c9b0a.css.map": "/branefive/static/css/main.073c9b0a.css.map",
-    "main.3be75c81.js.map": "/branefive/static/js/main.3be75c81.js.map",
+    "main.2ca323dd.css.map": "/branefive/static/css/main.2ca323dd.css.map",
+    "main.a96958a7.js.map": "/branefive/static/js/main.a96958a7.js.map",
     "787.cda612ba.chunk.js.map": "/branefive/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.3be75c81.js"
+    "static/css/main.2ca323dd.css",
+    "static/js/main.a96958a7.js"
   ]
 }
