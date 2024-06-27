@@ -20,6 +20,8 @@ export function loadAssets(){
     assets.set('hoodie', require('../assets/hoodie.webp'))
     assets.set('sticker', require('../assets/sticker.png'))
     assets.set('tour', require('../assets/tour.jpg'))
+    assets.set('bandLandscape', require('../assets/landscape.jpg'))
+    assets.set('bandPortrait', require('../assets/portrait.jpg'))
 
     return assets;
 }

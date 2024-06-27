@@ -11,9 +11,9 @@ export function Home(){
     <>
         <Hero/>
         <Space h={150} />
-        <ImageComponent />
-        <Space h={150} />
         <Tour />
+        <Space h={150} />
+        <ImageComponent />
         <Space h={150} />
         <NewsComponent />
         <Space h={150} />

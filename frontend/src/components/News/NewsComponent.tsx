@@ -30,9 +30,10 @@ export function NewsComponent(){
     const stories : StoryType[] = DataService.getNewsCards();
 
     const cards = stories.slice(0,4).map((story, index) => (
-        <Carousel.Slide>
+        <Carousel.Slide 
+            key={"news-slide" + index}>
             <Card
-                key={index}
+                key={"news-card" + index}
                 p="md"
                 radius="md"
                 component="a"
@@ -61,7 +62,7 @@ export function NewsComponent(){
         </Grid.Col>
         <Space h={50}/>
         <Grid.Col sm={10} lg={8}>
-          <Carousel
+        <Carousel
             align="start"
             withIndicators
             height={300}

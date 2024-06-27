@@ -103,7 +103,7 @@
         "tourImage": "tour",
         "events": [
             {
-                "name": "Was besch du2?",
+                "name": "Was besch du3?",
                 "description": {"en": "Gang Wiiter", "de": "Gang Wiiter"},
                 "date": "2024-09-27T19:00:00Z",
                 "place": {"name": "Ballwil, CH", "latitute": 0, "longitude": 0}
@@ -135,7 +135,7 @@
             {
                 "name": "Seefestival Wädenswil",
                 "description": {"en": "", "de": ""},
-                "date": "2024-07-31T21:30:00Z",
+                "date": "2024-06-31T21:30:00Z",
                 "place": {"name": "Wädenswil, CH", "latitude": 0, "longitude": 0}
             }
         ]
@@ -361,10 +361,7 @@
         ]
     },
     "gallery": {
-        "images": [
-            {"assetId": "elias"},
-            {"assetId": "elija"},
-            {"assetId": "suvin"}
-        ]
+        "landscape": {"assetId": "bandLandscape"},
+        "portrait": {"assetId": "bandPortrait"}
     }
 }

@@ -24,5 +24,13 @@ export const useImagesStyle = createStyles((theme) => ({
         lineHeight: 1.2,
       },
     },
+
+    button: {
+      background: theme.colors.red[6],
+
+      ":hover" : {
+        background: theme.colors.red[5],
+      }
+    },
   }));
   

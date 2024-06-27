@@ -44,13 +44,9 @@ export function TourNextEvent(){
 
     return(
         <>
-         <Grid>
-            <Grid.Col span={8}>
-                <h2>{latestEvent.name}</h2>
-                <TourCountdown deadline = {latestEvent}/>
-                {hasNextEvent ? eventInfo() : <></>}
-            </Grid.Col>
-        </Grid>
+            <h2>{latestEvent.name}</h2>
+            <TourCountdown deadline = {latestEvent}/>
+            {hasNextEvent ? eventInfo() : <></>}
         </>
     )
 }

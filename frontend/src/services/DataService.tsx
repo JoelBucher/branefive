@@ -11,6 +11,7 @@ import { StoryType } from "../components/Story/types/StoryType";
 import { ImageType } from "../components/Images/types/ImageType";
 import { ShopType } from "../components/Shop/types/ShopType";
 import { ProductType } from "../components/Shop/types/ProductType";
+import { GalleryType } from "../components/Images/types/GalleryType";
 
 export class DataService {
     data : WebsiteData= DataService.loadData();
@@ -59,8 +60,8 @@ export class DataService {
         return data.news.stories;
     }
 
-    public static getImages() : ImageType[] {
-        return data.gallery.images;
+    public static getGallery() : GalleryType {
+        return data.gallery;
     }
 
     public static getShopProducts() : ProductType[] {
