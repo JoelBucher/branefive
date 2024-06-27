@@ -105,13 +105,13 @@
             {
                 "name": "Enoteca da Ramundo",
                 "description": {"en": "", "de": ""},
-                "date": "2024-05-27T19:00:00",
+                "date": "2024-05-27T19:00:00Z",
                 "place": {"name": "Beromünster, CH", "latitute": 0, "longitude": 0}
             },
             {
                 "name": "Dorfturnier Baubu",
                 "description": {"en": "", "de": ""},
-                "date": "2024-07-08T21:00:00",
+                "date": "2024-07-08T21:00:00Z",
                 "place": {"name": "Ballwil, CH", "latitude": 0, "longitude": 0}
             },
             {
@@ -123,7 +123,7 @@
             {
                 "name": "Seefestival Wädenswil",
                 "description": {"en": "", "de": ""},
-                "date": "2024-06-31T21:30:00",
+                "date": "2024-06-30T21:30:00",
                 "place": {"name": "Wädenswil, CH", "latitude": 0, "longitude": 0}
             }
         ]

@@ -4,7 +4,6 @@ import { EventType } from "../types/EventType";
 import { TourType } from "../types/TourType";
 import { DateTimeService } from "../../../services/DateTimeService";
 import { useTourNextEventStyle as useTourStyle } from "../hooks/useTourNextEventStyle";
-import { paste } from "@testing-library/user-event/dist/paste";
 
 function getEventTitle(event : EventType){
   if(new Date(event.date) < new Date()){
@@ -29,9 +28,6 @@ export function TourTimeline() {
   }
 
   const {classes} = useTourStyle();
-
-  console.log(events.length - pastEvents);
-
   const futureEvents = events.length - pastEvents -1;
 
   return (
