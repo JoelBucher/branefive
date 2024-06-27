@@ -16,6 +16,10 @@ export function loadAssets(){
     assets.set('noah', require('../assets/noah.jpeg'))
     assets.set('julian', require('../assets/julian.jpeg'))
     assets.set('404', require('../assets/404.svg'))
+    assets.set('cap', require('../assets/cap.jpg'))
+    assets.set('hoodie', require('../assets/hoodie.webp'))
+    assets.set('sticker', require('../assets/sticker.png'))
+    assets.set('tour', require('../assets/tour.jpg'))
 
     return assets;
 }

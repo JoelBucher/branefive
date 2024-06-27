@@ -7,4 +7,5 @@ export type AlbumType = {
     description: LanguageText;
     assetId: string;
     songs: SongType[]
+    spotifyLink: string;
 }

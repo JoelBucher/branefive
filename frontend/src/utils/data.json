@@ -4,8 +4,9 @@
             {"link": "/", "label": {"en": "Home", "de": "Home"}},
             {"link": "/band", "label": {"en": "Band", "de": "Band"}},
             {"link": "/tour", "label": {"en": "Tour", "de": "Tour"}},
-            {"link": "/contact", "label": {"en": "Contact", "de": "Kontakt"}},
-            {"link": "/music", "label": {"en": "Discography", "de": "Diskographie"}}
+            {"link": "/music", "label": {"en": "Discography", "de": "Diskographie"}},
+            {"link": "/shop", "label": {"en": "Shop", "de": "Shop"}},
+            {"link": "/contact", "label": {"en": "Contact", "de": "Kontakt"}}
         ]
     },
     "headline": {
@@ -81,7 +82,8 @@
                     {"trackNumber": 4, "title": "Melody", "duration": "3:10"},
                     {"trackNumber": 5, "title": "Why Don't You Say", "duration": "3:10"},
                     {"trackNumber": 6, "title": "My Way", "duration": "3:10"}
-                ]
+                ],
+                "spotifyLink": "https://open.spotify.com/album/0Afh8teKjnlL47yTy31GKV"
             },
             {
                 "title": "Free The Animal In You",
@@ -92,34 +94,48 @@
                     "de": "Unsere erste Single \"Free the Animal in You\" wurde veröffentlicht!"},
                 "songs": [
                     {"trackNumber": 1, "title": "Free The Animal In You", "duration": "3:12"}
-                ]
+                ],
+                "spotifyLink": "https://open.spotify.com/album/3CG6UUdXpaI9c4NfzJqAwN"
             }
         ]
     },
     "tour": {
+        "tourImage": "tour",
         "events": [
+            {
+                "name": "Was besch du2?",
+                "description": {"en": "Gang Wiiter", "de": "Gang Wiiter"},
+                "date": "2024-09-27T19:00:00Z",
+                "place": {"name": "Ballwil, CH", "latitute": 0, "longitude": 0}
+            },
+            {
+                "name": "Was besch du?",
+                "description": {"en": "Gang Wiiter", "de": "Gang Wiiter"},
+                "date": "2024-08-27T19:00:00Z",
+                "place": {"name": "Ballwil, CH", "latitute": 0, "longitude": 0}
+            },
             {
                 "name": "Enoteca da Ramundo",
                 "description": {"en": "", "de": ""},
-                "date": "2023-05-27T19:00:00Z",
+                "date": "2024-05-27T19:00:00Z",
                 "place": {"name": "Beromünster, CH", "latitute": 0, "longitude": 0}
             },
             {
                 "name": "Dorfturnier Baubu",
                 "description": {"en": "", "de": ""},
-                "date": "2023-07-08T21:00:00Z",
+                "date": "2024-07-08T21:00:00Z",
                 "place": {"name": "Ballwil, CH", "latitude": 0, "longitude": 0}
             },
             {
                 "name": "Städtlifäscht Risee",
                 "description": {"en": "", "de": ""},
-                "date": "2023-07-01T20:45:00Z",
+                "date": "2024-07-01T20:45:00Z",
                 "place": {"name": "Richensee, CH", "latitude": 0, "longitude": 0}
             },
             {
                 "name": "Seefestival Wädenswil",
                 "description": {"en": "", "de": ""},
-                "date": "2023-07-31T21:30:00Z",
+                "date": "2024-07-31T21:30:00Z",
                 "place": {"name": "Wädenswil, CH", "latitude": 0, "longitude": 0}
             }
         ]
@@ -185,17 +201,7 @@
                         "description": {"en": "Julian takes you to another universe with the sounds of his cornet.", "de": "Julian nimmt dich mit auf eine Reise in andere Sphären, wenn sein Cornet erklingt."}
                     }
                 ]
-            },
-{
-                "name": "Manuel",
-                "description": {"en": "Bass", "de": "Bass"},
-                "assetId": "manuel",
-                "properties": [
-                    {
-                        "iconAssetId": "music",
-                        "description": {"en": "Manuel is the man for the low notes. People start dancing when he hits the thick strings.", "de": "Manuel ist der Mann für die tiefen Töne. Er bringt die Leute zum Tanzen mit seinen dicken Saiten."}
-                    }
-                ]
+            }
         ]
     },
     "news": {
@@ -246,7 +252,7 @@
             },
             {
                 "storyId": "jahresrueckblick",
-                "title": {"en": "", "de": ""},
+                "title": {"en": "test test", "de": "test test"},
                 "storyCardImage": "richensee",
                 "date": "11. Dezember 2022",
                 "blocks":[
@@ -266,7 +272,7 @@
             },
             {
                 "storyId": "christmas-wishes-2021",
-                "title": {"en": "", "de": ""},
+                "title": {"en": "test test", "de": "test test"},
                 "storyCardImage": "richensee",
                 "date": "21. Dezember 2021",
                 "blocks":[
@@ -312,6 +318,53 @@
                     }
                 ]
             }
+        ]
+    },
+    "shop": {
+        "products": [
+            {
+                "name": {
+                    "de": "Branefive Cap",
+                    "en": "Branefive Cap"
+                },
+                "price": 12,
+                "description": {
+                    "de": "coolest cap ever",
+                    "en": "coolest cap ever"
+                },
+                "productImage": "cap"
+            },
+            {
+                "name": {
+                    "de": "Branefive Sticker",
+                    "en": "Branefive Sticker"
+                },
+                "price": 2,
+                "description": {
+                    "de": "coolest Sticker ever",
+                    "en": "coolest Sticker ever"
+                },
+                "productImage": "sticker"
+            },
+            {
+                "name": {
+                    "de": "Branefive Hoodie",
+                    "en": "Branefive Hoodie"
+                },
+                "price": 12,
+                "description": {
+                    "de": "coolest hoodie ever",
+                    "en": "coolest hoodie ever"
+                },
+                "productImage": "hoodie"
+            }
+        ]
+    },
+    "gallery": {
+        "images": [
+            {"assetId": "elias"},
+            {"assetId": "elija"},
+            {"assetId": "suvin"}
         ]
     }
 }

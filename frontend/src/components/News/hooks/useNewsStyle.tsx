@@ -1,4 +1,4 @@
-import { createStyles } from "@mantine/core";
+import { createStyles, rem } from "@mantine/core";
 
 export const useNewsStyle = createStyles((theme) => ({
     card: {
@@ -12,7 +12,17 @@ export const useNewsStyle = createStyles((theme) => ({
   
     title: {
       fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-      fontWeight: 600,
+      fontSize: rem(62),
+      fontWeight: 900,
+      lineHeight: 1.1,
+      margin: 0,
+      padding: 0,
+      color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+  
+      [theme.fn.smallerThan('sm')]: {
+        fontSize: rem(42),
+        lineHeight: 1.2,
+      },
     },
   }));
   

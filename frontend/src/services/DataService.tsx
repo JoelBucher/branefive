@@ -8,6 +8,9 @@ import { HeaderData } from "../components/Header/types/HeaderData";
 import { LanguageText } from "../types/LanguageText";
 import data from "../utils/data.json"
 import { StoryType } from "../components/Story/types/StoryType";
+import { ImageType } from "../components/Images/types/ImageType";
+import { ShopType } from "../components/Shop/types/ShopType";
+import { ProductType } from "../components/Shop/types/ProductType";
 
 export class DataService {
     data : WebsiteData= DataService.loadData();
@@ -54,5 +57,13 @@ export class DataService {
 
     public static getNewsCards() : StoryType[] {
         return data.news.stories;
+    }
+
+    public static getImages() : ImageType[] {
+        return data.gallery.images;
+    }
+
+    public static getShopProducts() : ProductType[] {
+        return data.shop.products;
     }
 }

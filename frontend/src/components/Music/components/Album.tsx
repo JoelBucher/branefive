@@ -2,6 +2,7 @@ import { ScrollArea, Table, Grid, Image } from '@mantine/core';
 import { AlbumType } from '../types/AlbumType';
 import { AssetsService } from '../../../services/AssetsService';
 import { RenderLanguageText } from '../../../services/useLanguage';
+import { Spotify } from 'react-spotify-embed';
 
 interface AlbumParameter {
     album: AlbumType;
@@ -41,6 +42,12 @@ function AlbumImage({album} : AlbumParameter){
 }
 
 export function Album({album} : AlbumParameter){
+    /*
+    <Grid.Col sm={8} orderSm={0}>
+                    <AlbumContent album={album}/>
+                </Grid.Col>
+
+                */
     return (
         <>
             <Grid>
@@ -55,7 +62,7 @@ export function Album({album} : AlbumParameter){
                     <AlbumImage album={album}/>
                 </Grid.Col>
                 <Grid.Col sm={8} orderSm={0}>
-                    <AlbumContent album={album}/>
+                    <Spotify style={{borderRadius: 15}} height={152} wide link={album.spotifyLink} />
                 </Grid.Col>
             </Grid>
         </>

@@ -10,7 +10,7 @@ export const useContactUsStyle = createStyles((theme) => {
       borderRadius: theme.radius.lg,
       padding: rem(4),
       border: `${rem(1)} solid ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[2]
+        theme.colorScheme === 'dark' ? theme.colors.dark[8] : "white"
       }`,
 
       [BREAKPOINT]: {

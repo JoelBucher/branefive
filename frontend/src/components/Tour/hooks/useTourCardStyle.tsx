@@ -7,7 +7,7 @@ export const useTourcardStyle = createStyles((theme) => ({
   
     section: {
       borderBottom: `${rem(1)} solid ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[3]
+        theme.colorScheme === 'dark' ? theme.colors.dark[4] : "white"
       }`,
       paddingLeft: theme.spacing.md,
       paddingRight: theme.spacing.md,

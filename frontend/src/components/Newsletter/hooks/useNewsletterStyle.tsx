@@ -18,21 +18,6 @@ export const useNewsletterStyle = createStyles((theme) => ({
       },
     },
   
-    title: {
-      fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-      fontSize: rem(62),
-      fontWeight: 900,
-      lineHeight: 1.1,
-      margin: 0,
-      padding: 0,
-      color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-  
-      [theme.fn.smallerThan('sm')]: {
-        fontSize: rem(42),
-        lineHeight: 1.2,
-      },
-    },
-  
     description: {
       marginTop: theme.spacing.xl,
       fontSize: rem(24),
@@ -54,13 +39,11 @@ export const useNewsletterStyle = createStyles((theme) => ({
       height: rem(54),
       paddingLeft: rem(38),
       paddingRight: rem(38),
+      background: theme.colors.red[6],
   
-      [theme.fn.smallerThan('sm')]: {
-        height: rem(54),
-        paddingLeft: rem(18),
-        paddingRight: rem(18),
-        flex: 1,
-      },
+      '&:hover': {
+        background: theme.colors.red[5]
+      }
     },
   }));
   

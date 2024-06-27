@@ -6,6 +6,8 @@ import { HeadlineType } from "../components/Home/types/HeadlineType";
 import { BandType } from "../components/Band/types/BandType";
 import { NewsType } from "../components/Story/types/NewsType";
 import { NewsCardType } from "../components/News/types/NewsCardType";
+import { ShopType } from "../components/Shop/types/ShopType";
+import { GalleryType } from "../components/Images/types/GalleryType";
 
 export type WebsiteData = {
     header: HeaderData;
@@ -15,4 +17,6 @@ export type WebsiteData = {
     tour: TourType;
     band: BandType;
     news: NewsType & NewsCardType;
+    shop: ShopType;
+    gallery: GalleryType;
 }

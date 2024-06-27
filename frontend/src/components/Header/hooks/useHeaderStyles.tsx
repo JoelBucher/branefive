@@ -45,15 +45,16 @@ export const useHeaderStyles = createStyles((theme) => ({
     link: {
       display: 'block',
       lineHeight: 1,
-      padding: `${rem(8)} ${rem(12)}`,
       borderRadius: theme.radius.sm,
       textDecoration: 'none',
-      color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
-      fontSize: theme.fontSizes.sm,
+      color: "white",
+      fontSize: 15,
       fontWeight: 500,
+      padding: 10,
+
   
       '&:hover': {
-        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+        backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : "white",
       },
   
       [theme.fn.smallerThan('sm')]: {
@@ -64,8 +65,8 @@ export const useHeaderStyles = createStyles((theme) => ({
   
     linkActive: {
       '&, &:hover': {
-        backgroundColor: theme.fn.variant({ variant: 'light', color: theme.colors.red[5] }).background,
-        color: theme.fn.variant({ variant: 'light', color: theme.colors.red[5] }).color,
+        backgroundColor: theme.colors.red[6],
+        color: theme.fn.variant({ variant: 'light', color: theme.colors.red[6] }).color,
       },
     },
   }));

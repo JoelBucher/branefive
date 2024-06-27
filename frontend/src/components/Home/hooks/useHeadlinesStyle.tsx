@@ -28,7 +28,7 @@ export const useHeadlinesStyle = createStyles((theme) => ({
   
     card: {
       border: `${rem(1)} solid ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
+        theme.colorScheme === 'dark' ? theme.colors.dark[5] : "white"
       }`,
     },
   

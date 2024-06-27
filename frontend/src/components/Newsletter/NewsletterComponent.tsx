@@ -2,32 +2,29 @@ import { Text, Button, Group, Grid, Avatar, MediaQuery } from '@mantine/core';
 import { useNewsletterStyle } from './hooks/useNewsletterStyle';
 import { AssetsService } from '../../services/AssetsService';
 
-
-
 function NewsletterText(){
   const { classes } = useNewsletterStyle();
 
   return(
     <>
-        <h1 className={classes.title}>
+        <h1>
           Join the Branefive{' '}
           <Text component="span" variant="gradient" gradient={{ from: 'red', to: 'magenta' }} inherit>
             Enjoyers Club
           </Text>
         </h1>
 
-        <Text className={classes.description} color="dimmed">
+        <p>
           Get updates about new Song releases and upcoming gigs.
-        </Text>
+        </p>
 
         <Group className={classes.controls}>
             <Button
               size="xl"
               component="a"
               href="https://chat.whatsapp.com/KgRlScf3rUMH1B4Ycu1VfS"
+              variant= "filled"
               className={classes.control}
-              variant="gradient"
-              gradient={{ from: 'red', to: 'red' }}
             >
               Join now!
             </Button>

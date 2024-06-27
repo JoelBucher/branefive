@@ -1,8 +1,9 @@
 import { Space } from "@mantine/core";
 import { Newsletter } from "../../Newsletter/NewsletterComponent";
-import { Headlines } from "./Headlines";
 import { Hero } from "./Hero";
 import { NewsComponent } from "../../News/NewsComponent";
+import { ImageComponent } from "../../Images/ImagesComponent";
+import { Tour } from "../../Tour/TourComponent";
 
 
 export function Home(){
@@ -10,7 +11,9 @@ export function Home(){
     <>
         <Hero/>
         <Space h={150} />
-        <Headlines/>
+        <ImageComponent />
+        <Space h={150} />
+        <Tour />
         <Space h={150} />
         <NewsComponent />
         <Space h={150} />

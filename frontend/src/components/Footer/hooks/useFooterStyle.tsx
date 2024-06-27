@@ -5,9 +5,9 @@ export const useFooterStyle = createStyles((theme) => ({
       marginTop: rem(120),
       paddingTop: `calc(${theme.spacing.xl} * 2)`,
       paddingBottom: `calc(${theme.spacing.xl} * 2)`,
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : "white",
       borderTop: `${rem(1)} solid ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
+        theme.colorScheme === 'dark' ? theme.colors.dark[5] : "white"
       }`,
     },
   
@@ -55,7 +55,7 @@ export const useFooterStyle = createStyles((theme) => ({
   
     link: {
       display: 'block',
-      color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : theme.colors.gray[6],
+      color: theme.colorScheme === 'dark' ? theme.colors.dark[1] : "white",
       fontSize: theme.fontSizes.sm,
       paddingTop: rem(3),
       paddingBottom: rem(3),
@@ -81,7 +81,7 @@ export const useFooterStyle = createStyles((theme) => ({
       paddingTop: theme.spacing.xl,
       paddingBottom: theme.spacing.xl,
       borderTop: `${rem(1)} solid ${
-        theme.colorScheme === 'dark' ? theme.colors.dark[4] : theme.colors.gray[2]
+        theme.colorScheme === 'dark' ? theme.colors.dark[4] : "white"
       }`,
   
       [theme.fn.smallerThan('sm')]: {

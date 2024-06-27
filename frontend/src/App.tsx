@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { HeaderResponsive } from './components/Header/HeaderComponent';
-import { MantineProvider } from '@mantine/core';
+import { Button, MantineProvider } from '@mantine/core';
 import { FooterResponsive } from './components/Footer/FooterComponent';
 import { ContactUs } from './components/Contact/ContactUsComponent';
 import { Route, HashRouter as Router, Routes } from 'react-router-dom'  
@@ -12,11 +12,17 @@ import { Tour } from './components/Tour/TourComponent';
 import { Band } from './components/Band/BandComponent';
 import { StoryComponent } from './components/Story/StoryComponent';
 import { NotFoundComponent } from './components/NotFound/NotFoundComponent';
+import { ShopComponent } from "./components/Shop/ShopComponent";
 
 function App() {
   return (
     <div style={{overflow: 'hidden'}}>
-      <MantineProvider theme={{ colorScheme: 'dark' }} withGlobalStyles>
+      <MantineProvider theme={{
+          colorScheme: 'dark',
+          components:{
+            Button: Button
+          }
+        }} withGlobalStyles>
         <Router>  
           <HeaderResponsive/>
             <Routes>
@@ -26,6 +32,7 @@ function App() {
                 <Route path="contact" element={<ContactUs/>}/>
                 <Route path="music" element={<Music/>}/>
                 <Route path="band" element={<Band/>}/>
+                <Route path="shop" element={<ShopComponent/>}/>
                 <Route path="news/:storyId" element={<StoryComponent/>}/>
                 <Route path="*" element={<NotFoundComponent/>}/>
             </Routes>

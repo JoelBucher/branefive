@@ -24,13 +24,6 @@ export const useTourNextEventStyle  = createStyles((theme) => ({
         borderRadius: 10,
         paddingBottom: 5,
         paddingTop: 5,
-
-        '&:hover': {
-            background: theme.colors.dark[6],
-        },
-        '&:active': {
-            background: theme.colors.dark[8],
-        },
-    }
+    },
     })
 );
