@@ -6,12 +6,11 @@ import { FooterData } from "../components/Footer/types/FooterData";
 import { WebsiteData } from "../types/WebsiteData";
 import { HeaderData } from "../components/Header/types/HeaderData";
 import { LanguageText } from "../types/LanguageText";
-import data from "../utils/data.json"
 import { StoryType } from "../components/Story/types/StoryType";
-import { ImageType } from "../components/Images/types/ImageType";
+import { GalleryType } from "../components/Gallery/types/GalleryType";
+import data from "../utils/data.json"
+import { BandType } from "../components/Band/types/BandType";
 import { ShopType } from "../components/Shop/types/ShopType";
-import { ProductType } from "../components/Shop/types/ProductType";
-import { GalleryType } from "../components/Images/types/GalleryType";
 
 export class DataService {
     data : WebsiteData= DataService.loadData();
@@ -48,11 +47,15 @@ export class DataService {
         return data.band.description;
     }
 
+    public static getBand() : BandType {
+        return data.band;
+    }
+
     public static getBandTitle() : LanguageText {
         return data.band.title;
     }
 
-    public static getStory(storyId : string | undefined) : StoryType | undefined {
+    public static getStory(storyId : string | undefined) : StoryType | undefined {
         return data.news.stories.find(story => story.storyId === storyId);
     }
 
@@ -64,7 +67,7 @@ export class DataService {
         return data.gallery;
     }
 
-    public static getShopProducts() : ProductType[] {
-        return data.shop.products;
+    public static getShopData() : ShopType {
+        return data.shop;
     }
 }

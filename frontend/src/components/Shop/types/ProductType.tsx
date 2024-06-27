@@ -5,4 +5,6 @@ export type ProductType = {
     price: number,
     description: LanguageText,
     productImage: string,
+    available: boolean,
+    buyLink: string,
 }

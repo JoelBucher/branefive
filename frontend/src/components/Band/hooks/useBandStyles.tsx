@@ -1,14 +1,6 @@
 import { createStyles, rem } from "@mantine/core";
 
-export const useImagesStyle = createStyles((theme) => ({
-    card: {
-      transition: 'transform 150ms ease, box-shadow 150ms ease',
-  
-      '&:hover': {
-        transform: 'scale(1.01)',
-        boxShadow: theme.shadows.md,
-      },
-    },
+export const useBandStyles = createStyles((theme) => ({
   
     title: {
       fontFamily: `Greycliff CF, ${theme.fontFamily}`,

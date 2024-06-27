@@ -1,16 +1,19 @@
 import { Text, Space, Grid, Image, BackgroundImage, Button } from "@mantine/core";
-import { useImagesStyle } from "./hooks/useImagesStyles";
+import { useBandStyles } from "./hooks/useBandStyles";
 import { DataService } from "../../services/DataService";
-import { ImageType } from "./types/ImageType";
 import { AssetsService } from "../../services/AssetsService";
+import { ImageType } from "../Gallery/types/ImageType";
+import { LanguageText } from "../../types/LanguageText";
+import { BandType } from "./types/BandType";
+import { RenderLanguageText } from "../../services/useLanguage";
 
-export function ImageComponent(){
-    const { classes } = useImagesStyle(); 
+export function BandHero(){
+    const { classes } = useBandStyles(); 
     
-    const gallery = DataService.getGallery();
-
-    const portrait : ImageType = gallery.portrait;
-    const landscape : ImageType = gallery.landscape;
+    const band : BandType= DataService.getBand();
+	const buttonText : LanguageText = band.heroButtonText;
+    const portrait : ImageType = band.heroPortrait;
+    const landscape : ImageType = band.heroLandscape;
 
     const windowHeight = window.innerHeight;
     const windowWidth = window.innerWidth;
@@ -33,7 +36,7 @@ export function ImageComponent(){
                             component="a"
                             href="#/band"
                         >
-                            Explore the Band
+                            <RenderLanguageText text={buttonText}/>
                         </Button>
                 </Grid.Col>
             </Grid>

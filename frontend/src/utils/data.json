@@ -103,44 +103,38 @@
         "tourImage": "tour",
         "events": [
             {
-                "name": "Was besch du3?",
-                "description": {"en": "Gang Wiiter", "de": "Gang Wiiter"},
-                "date": "2024-09-27T19:00:00Z",
-                "place": {"name": "Ballwil, CH", "latitute": 0, "longitude": 0}
-            },
-            {
-                "name": "Was besch du?",
-                "description": {"en": "Gang Wiiter", "de": "Gang Wiiter"},
-                "date": "2024-08-27T19:00:00Z",
-                "place": {"name": "Ballwil, CH", "latitute": 0, "longitude": 0}
-            },
-            {
                 "name": "Enoteca da Ramundo",
                 "description": {"en": "", "de": ""},
-                "date": "2024-05-27T19:00:00Z",
+                "date": "2024-05-27T19:00:00",
                 "place": {"name": "Beromünster, CH", "latitute": 0, "longitude": 0}
             },
             {
                 "name": "Dorfturnier Baubu",
                 "description": {"en": "", "de": ""},
-                "date": "2024-07-08T21:00:00Z",
+                "date": "2024-07-08T21:00:00",
                 "place": {"name": "Ballwil, CH", "latitude": 0, "longitude": 0}
             },
             {
                 "name": "Städtlifäscht Risee",
                 "description": {"en": "", "de": ""},
-                "date": "2024-07-01T20:45:00Z",
+                "date": "2024-06-27T21:05:30",
                 "place": {"name": "Richensee, CH", "latitude": 0, "longitude": 0}
             },
             {
                 "name": "Seefestival Wädenswil",
                 "description": {"en": "", "de": ""},
-                "date": "2024-06-31T21:30:00Z",
+                "date": "2024-06-31T21:30:00",
                 "place": {"name": "Wädenswil, CH", "latitude": 0, "longitude": 0}
             }
         ]
     },
     "band": {
+        "heroButtonText": {
+            "de": "Mehr erfahren",
+            "en": "explore"
+        },
+        "heroPortrait": {"assetId": "bandPortrait"},
+        "heroLandscape": {"assetId": "bandLandscape"},
         "title": {"en": "Who we are", "de": "Wer wir sind"},
         "description": {
             "en": "The rock band was found in November 2018 in Ermensee, a small town in the canton of Lucerne, Switzerland, by the 3 brothers Noah, Elija and Julian Müller as well as Elias Ruckstuhl. In early 2020, guitarist Suvin Blum joined the band. In winter '23, Manuel Birrer stepped into the band as the new bassist replacing Julian Müller, who can still be enjoyed playing the cornet live. Today, the style of Branefive varies from energetic alternative rock to pretty sensitive stuff, often with a pop structure as a foundation. In addition on live shows, Branefive loves to play covers of classics through the decades. It is an understatement to say that rock means the absolute world to them.",
@@ -169,7 +163,7 @@
                     }
                 ]
             },
-{
+            {
                 "name": "Elija",
                 "description": {"en": "Elija, the rhythmic machine behind Branefive. Loves to hit everything on the drum that belongs to sweet old rock n' roll.", "de": "Elija ist die rhythmische Maschine hinter Branefive, er gibt den Takt vor. Für guten alten Rock n' Roll haut er alles aus seinem Schlagzeug heraus."},
                 "assetId": "elija",
@@ -321,6 +315,18 @@
         ]
     },
     "shop": {
+        "header": {
+            "de": "Branefive Webshop",
+            "en": "Branefive Webshop"
+        },
+        "subtitle": {
+            "de": "Welcome to the Branefive Webshop",
+            "en": "Willkommen im Branefive Webshop"
+        },
+        "buyButtonText": {
+            "de": "buy",
+            "en": "kaufen"
+        },
         "products": [
             {
                 "name": {
@@ -332,7 +338,9 @@
                     "de": "coolest cap ever",
                     "en": "coolest cap ever"
                 },
-                "productImage": "cap"
+                "productImage": "cap",
+                "available": true,
+                "buyLink": "https://buy.stripe.com/test_aEU6s48ABbMw1wI001"
             },
             {
                 "name": {
@@ -344,7 +352,9 @@
                     "de": "coolest Sticker ever",
                     "en": "coolest Sticker ever"
                 },
-                "productImage": "sticker"
+                "productImage": "sticker",
+                "available": false,
+                "buyLink": "https://buy.stripe.com/test_aEU6s48ABbMw1wI001"
             },
             {
                 "name": {
@@ -356,12 +366,13 @@
                     "de": "coolest hoodie ever",
                     "en": "coolest hoodie ever"
                 },
-                "productImage": "hoodie"
+                "productImage": "hoodie",
+                "available": true,
+                "buyLink": "https://buy.stripe.com/test_aEU6s48ABbMw1wI001"
             }
         ]
     },
     "gallery": {
-        "landscape": {"assetId": "bandLandscape"},
-        "portrait": {"assetId": "bandPortrait"}
+       "images": []
     }
 }

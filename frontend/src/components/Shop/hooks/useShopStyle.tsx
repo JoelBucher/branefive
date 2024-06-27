@@ -26,13 +26,29 @@ export const useShopStyle = createStyles((theme) => ({
     },
 
     button: {
-      marginTop: 10,
+      marginTop: 15,
       background: theme.colors.red[6],
 
       '&:hover': {
         background: theme.colors.red[5]
       }
-    }
+    },
+
+    available: {
+      height: 10,
+      width: 10,
+      borderRadius: "50%",
+      display: "inline-block",
+      backgroundColor: theme.colors.green[6],
+    },
+
+    notAvailable: {
+      height: 10,
+      width: 10,
+      borderRadius: "50%",
+      display: "inline-block",
+      backgroundColor: theme.colors.red[6],
+    },
 
   }));
   
