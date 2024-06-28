@@ -9,33 +9,6 @@
             {"link": "/contact", "label": {"en": "Contact", "de": "Kontakt"}}
         ]
     },
-    "headline": {
-        "title": {"en": "We are Branefive!", "de": "Wir sind Branefive!"},
-        "subtitle": {"en": "Your favourite rock band from Lucerne, Switzerland", "de": "Deine Rockband aus dem Luzerner Seetal"},
-        "features": [
-            {
-                "iconAssetId": "newIcon",
-                "title": {"en": "Music", "de": "Musik"},
-                "subtitle": {"en": "Dive into our sound", "de": "So tönt Branefive!"},
-                "buttonText": {"en": "explore", "de": "Entdecken"},
-                "link": "/music"
-            },
-            {
-                "iconAssetId": "tour",
-                "title": {"en": "Tour", "de": "Tour"},
-                "subtitle": {"en": "LIVE SHOWS", "de": "LIVE SHOWS"},
-                "buttonText": {"en": "Show tour dates", "de": "Tourdaten ansehen"},
-                "link": "/tour"
-            },
-            {
-                "iconAssetId": "band",
-                "title": {"en": "Band", "de": "Band"},
-                "subtitle": {"en": "Who we are", "de": "Wer wir sind"},
-                "buttonText": {"en": "Get to know us", "de": "Lerne uns kennen"},
-                "link": "/band"
-            }
-        ]
-    },
     "footer": {
         "slogan": {"en": "Brave. Brute. Branefive.", "de": "Die Rockband, nach der du gesucht hast."},
         "copyright": {"en": "© 2023 Branefive. All rights reserved.", "de": "© 2023 Branefive. All rights reserved."},
@@ -71,30 +44,17 @@
             {
                 "title": "Singin' in Silence",
                 "assetId": "singinInSilence",
-                "releaseDate": {"en": "7th October 2022", "de": "7. Oktober 2022"},
                 "description": {
                     "en": "description english",
                     "de": "Unsere erste EP \"Singin' in Silence\" wurde veröffentlicht!"},
-                "songs": [
-                    {"trackNumber": 1, "title": "Meant to Be", "duration": "3:12"},
-                    {"trackNumber": 2, "title": "Wrong", "duration": "3:11"},
-                    {"trackNumber": 3, "title": "Singin' in Silence", "duration": "3:11"},
-                    {"trackNumber": 4, "title": "Melody", "duration": "3:10"},
-                    {"trackNumber": 5, "title": "Why Don't You Say", "duration": "3:10"},
-                    {"trackNumber": 6, "title": "My Way", "duration": "3:10"}
-                ],
                 "spotifyLink": "https://open.spotify.com/album/0Afh8teKjnlL47yTy31GKV"
             },
             {
                 "title": "Free The Animal In You",
                 "assetId": "freeTheAnimalInYou",
-                "releaseDate": {"en": "25th September 2020", "de": "25. September 2020"},
                 "description": {
                     "en": "description english",
                     "de": "Unsere erste Single \"Free the Animal in You\" wurde veröffentlicht!"},
-                "songs": [
-                    {"trackNumber": 1, "title": "Free The Animal In You", "duration": "3:12"}
-                ],
                 "spotifyLink": "https://open.spotify.com/album/3CG6UUdXpaI9c4NfzJqAwN"
             }
         ]
@@ -374,5 +334,20 @@
     },
     "gallery": {
        "images": []
+    },
+    "contact": {
+        "header": {
+            "de": "Kontaktiere uns!",
+            "en": "contact us!"
+        },
+        "subtitle": {
+            "de": "Schreiben Sie uns oder rufen sie an",
+            "en": "naisenfordu"
+        },
+        "mail": "info[at]branefive.com",
+        "address1": "Branefive",
+        "address2": "Rankstrasse 4",
+        "address3": "6294 Ermensee",
+        "phone": "041 917 01 18"
     }
 }

@@ -90,11 +90,5 @@ export const useContactUsStyle = createStyles((theme) => {
         marginBottom: theme.spacing.xl,
       },
     },
-
-    control: {
-      [BREAKPOINT]: {
-        flex: 1,
-      },
-    },
   };
 });

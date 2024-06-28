@@ -8,33 +8,6 @@ interface AlbumParameter {
     album: AlbumType;
 }
 
-function SongList({album} : AlbumParameter){
-    return <>
-        {album.songs.map((song) => {
-            return (
-                <tr key={song.title}>
-                    <td>{song.trackNumber}</td>
-                    <td>{song.title}</td>
-                    <td>{song.duration}</td>
-                </tr>
-            );
-        })}
-    </>;
-}
-
-
-function AlbumContent({album} : AlbumParameter){
-    return(
-        <ScrollArea>
-            <Table verticalSpacing="xs">
-            <tbody>
-                <SongList album={album}/>
-            </tbody>
-            </Table>
-        </ScrollArea>
-    );
-}
-
 function AlbumImage({album} : AlbumParameter){
     return (
         <Image maw={240} mx="auto" radius="md" src={AssetsService.get(album.assetId)} alt="Random image" />

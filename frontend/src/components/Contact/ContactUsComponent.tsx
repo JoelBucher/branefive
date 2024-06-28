@@ -7,51 +7,14 @@ import {
   Group,
   SimpleGrid,
   Grid,
+  Space,
 } from '@mantine/core';
 import { IconPhone, IconMapPin, IconAt } from '@tabler/icons-react';
 import { useContactUsStyle } from './hooks/useContactUsStyle';
-
-export function ContactUs() {
-    const { classes } = useContactUsStyle();
-  
-    return (
-      <Grid justify="center">
-      <Grid.Col md={10} lg={7}>
-      <Paper shadow="md" radius="lg">
-        <div className={classes.wrapper}>
-          <div className={classes.contacts}>
-            <Text fz="lg" fw={700} className={classes.title} c="#fff">
-              Contact information
-            </Text>
-
-            <table>
-              <tbody>
-                <tr className={classes.contactIconElement}>
-                  <td><IconAt size={30}></IconAt></td>
-                  <td>
-                    <p className={classes.iconListText}>Email</p>
-                    <p className={classes.iconListText}><b>info[at]branefive.com</b></p>
-                  </td>
-                </tr>
-                <tr className={classes.contactIconElement}>
-                  <td><IconPhone size={30}></IconPhone></td>
-                  <td>
-                    <p className={classes.iconListText}>Phone</p>
-                    <p className={classes.iconListText}><b>041 917 01 18</b></p>
-                  </td>
-                </tr>
-                <tr className={classes.contactIconElement}>
-                  <td><IconMapPin size={30}></IconMapPin></td>
-                  <td>
-                    <p className={classes.iconListText}>Address</p>
-                    <p className={classes.iconListText}><b>Branefive <br></br> Rankstrasse 4 <br></br>6294 Ermensee</b></p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-  
-          <form className={classes.form} onSubmit={(event) => event.preventDefault()}>
+import { DataService } from '../../services/DataService';
+import { RenderLanguageText } from '../../services/useLanguage';
+/*
+  <form className={classes.form} onSubmit={(event) => event.preventDefault()}>
             <Text fz="lg" fw={700} className={classes.title}>
               Get in touch
             </Text>
@@ -78,9 +41,62 @@ export function ContactUs() {
               </Group>
             </div>
           </form>
-        </div>
-      </Paper>
-      </Grid.Col>
-    </Grid>
+          */
+export function ContactUs() {
+    const { classes } = useContactUsStyle();
+    const contactData = DataService.getContactData();
+  
+    return (
+      <>
+        <Space h={50}/>
+        <Grid justify="center">
+        <Grid.Col md={10} lg={7}>
+        <Paper shadow="md" radius="lg">
+          <div className={classes.wrapper}>
+            <div className={classes.contacts}>
+
+              <table>
+                <tbody>
+                  <tr className={classes.contactIconElement}>
+                    <td><IconAt size={30}></IconAt></td>
+                    <td>
+                      <p className={classes.iconListText}><b>{contactData.mail}</b></p>
+                    </td>
+                  </tr>
+                  <tr className={classes.contactIconElement}>
+                    <td><IconPhone size={30}></IconPhone></td>
+                    <td>
+                      <p className={classes.iconListText}><b>{contactData.phone}</b></p>
+                    </td>
+                  </tr>
+                  <tr className={classes.contactIconElement}>
+                    <td><IconMapPin size={30}></IconMapPin></td>
+                    <td>
+                      <p className={classes.iconListText}>
+                        <b>
+                          {contactData.address1}<br/>
+                          {contactData.address2}<br/>
+                          {contactData.address3}
+                        </b>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div style={{marginLeft: 20, marginTop: 20}}>
+              <h2>
+                <RenderLanguageText text={contactData.header}/>
+              </h2>
+              <p>
+                <RenderLanguageText text={contactData.subtitle}/>
+              </p>
+            </div>
+            
+          </div>
+        </Paper>
+        </Grid.Col>
+      </Grid>
+    </>
     );
 }

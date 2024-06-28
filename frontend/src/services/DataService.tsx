@@ -1,5 +1,4 @@
 import { MemberType } from "../components/Band/types/MemberType";
-import { HeadlineType } from "../components/Home/types/HeadlineType";
 import { AlbumType } from "../components/Music/types/AlbumType";
 import { TourType } from "../components/Tour/types/TourType";
 import { FooterData } from "../components/Footer/types/FooterData";
@@ -11,6 +10,7 @@ import { GalleryType } from "../components/Gallery/types/GalleryType";
 import data from "../utils/data.json"
 import { BandType } from "../components/Band/types/BandType";
 import { ShopType } from "../components/Shop/types/ShopType";
+import { ContactType } from "../components/Contact/types/ContactType";
 
 export class DataService {
     data : WebsiteData= DataService.loadData();
@@ -33,10 +33,6 @@ export class DataService {
 
     public static getTourData() : TourType {
         return this.loadData().tour;
-    }
-
-    public static getHeadlinesData() : HeadlineType{
-        return data.headline;
     }
 
     public static getBandMembers() : MemberType[] {
@@ -69,5 +65,9 @@ export class DataService {
 
     public static getShopData() : ShopType {
         return data.shop;
+    }
+
+    public static getContactData() : ContactType {
+        return data.contact;
     }
 }
