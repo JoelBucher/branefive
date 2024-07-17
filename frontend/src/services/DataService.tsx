@@ -11,6 +11,8 @@ import data from "../utils/data.json"
 import { BandType } from "../components/Band/types/BandType";
 import { ShopType } from "../components/Shop/types/ShopType";
 import { ContactType } from "../components/Contact/types/ContactType";
+import { NewsType } from "../components/Story/types/NewsType";
+import { NewsletterType } from "../components/Newsletter/types/NewsletterType";
 
 export class DataService {
     data : WebsiteData= DataService.loadData();
@@ -55,8 +57,8 @@ export class DataService {
         return data.news.stories.find(story => story.storyId === storyId);
     }
 
-    public static getNewsCards() : StoryType[] {
-        return data.news.stories;
+    public static getNewsData() : NewsType {
+        return data.news;
     }
 
     public static getGallery() : GalleryType {
@@ -69,5 +71,9 @@ export class DataService {
 
     public static getContactData() : ContactType {
         return data.contact;
+    }
+
+    public static getNewsletterData() : NewsletterType {
+        return data.newsletter;
     }
 }

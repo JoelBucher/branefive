@@ -7,6 +7,7 @@ import { MemberType } from "./types/MemberType";
 import { MemberPropertyType } from "./types/MemberPropertyType";
 import { IconService } from "../../services/IconService";
 import { RenderLanguageText } from "../../services/useLanguage";
+import { BORDER_RADIUS } from "../../utils/constants";
 
 function MemberPropertyTable(props : {properties : MemberPropertyType[]}){
 
@@ -37,11 +38,11 @@ function Slides(){
     
     const slides = members.map((member, index) =>
         <Carousel.Slide key={index}>
-            <Card radius={10} style={{height: "100%"}}>
+            <Card radius={10} style={{height: "100%", borderRadius: BORDER_RADIUS}}>
                 <Grid>
                     <Grid.Col md={6} lg={5}>
                         <Center>
-                            <img alt={member.name} src={AssetsService.get(member.assetId)} style={{width: "100%", maxWidth: "300px", borderRadius: 10}}/>
+                            <img alt={member.name} src={AssetsService.get(member.assetId)} style={{width: "100%", maxWidth: "300px", borderRadius: BORDER_RADIUS}}/>
                         </Center>
                     </Grid.Col>
                     <Grid.Col md={6} lg={7}>

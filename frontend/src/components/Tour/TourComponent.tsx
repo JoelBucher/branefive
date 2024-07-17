@@ -5,6 +5,7 @@ import { AssetsService } from '../../services/AssetsService';
 import { DataService } from '../../services/DataService';
 import { TourType } from './types/TourType';
 import { useMediaQuery } from '@mantine/hooks';
+import { BORDER_RADIUS } from '../../utils/constants';
 
 export function Tour() {
   const tourData : TourType = DataService.getTourData();
@@ -15,7 +16,7 @@ export function Tour() {
     return(
       <Grid.Col span={5}>
         <AspectRatio ratio={1920 / 1080}>
-            <img src={AssetsService.get(tourImage)} style={{borderRadius: 20}}/>
+            <img src={AssetsService.get(tourImage)} style={{borderRadius: BORDER_RADIUS}}/>
         </AspectRatio>
       </Grid.Col>
     );

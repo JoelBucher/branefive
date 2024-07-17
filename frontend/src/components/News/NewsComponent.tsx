@@ -4,30 +4,17 @@ import { DataService } from "../../services/DataService";
 import { StoryType } from "../Story/types/StoryType";
 import { AssetsService } from "../../services/AssetsService";
 import { RenderLanguageText } from "../../services/useLanguage";
-import { useHeadlinesStyle } from "../Home/hooks/useHeadlinesStyle";
 import { Carousel } from "@mantine/carousel";
-
-
-function TitleComponent(){
-    const { classes } = useHeadlinesStyle();
-    return(
-        <>
-            <Title order={2} className={classes.title} ta="center">
-                Stay up to date
-            </Title>
-
-            <Text c="dimmed" className={classes.description} ta="center" mt="md">
-                Subtitle
-            </Text>
-        </>
-    )
-}
-
+import { NewsType } from "../Story/types/NewsType";
+import { useMediaQuery } from "@mantine/hooks";
+import { BORDER_RADIUS } from "../../utils/constants";
 
 export function NewsComponent(){
     const { classes } = useNewsStyle(); 
-        
-    const stories : StoryType[] = DataService.getNewsCards();
+    
+    const newsData : NewsType = DataService.getNewsData();
+    const stories : StoryType[] = newsData.stories;
+    const isMdOrSmaller = useMediaQuery('(max-width: 768px)');
 
     const cards = stories.slice(0,4).map((story, index) => (
         <Carousel.Slide 
@@ -38,7 +25,9 @@ export function NewsComponent(){
                 radius="md"
                 component="a"
                 href={"#/news/" + story.storyId}
-                className={classes.card}>
+                className={classes.card}
+                style={{borderRadius: BORDER_RADIUS}}
+                >
                 <AspectRatio ratio={1920 / 1080}>
                     <Image src={AssetsService.get(story.storyCardImage)} />
                 </AspectRatio>
@@ -53,11 +42,8 @@ export function NewsComponent(){
   return (
     <Grid align='center' justify='center'>
         <Grid.Col sm={10} lg={8}>
-            <h1 className={classes.title}>
-                Stay{' '}
-                <Text component="span" variant="gradient" gradient={{ from: 'red', to: 'magenta' }} inherit>
-                    Up to date
-                </Text>
+            <h1>
+                <RenderLanguageText text={newsData.heroTitle}/>
             </h1>
         </Grid.Col>
         <Space h={50}/>

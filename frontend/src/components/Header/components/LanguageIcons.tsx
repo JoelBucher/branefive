@@ -9,7 +9,7 @@ export function LanguageIcons(){
     if(language === Language.EN){
         return(
             <ActionIcon>
-                <img src="https://hatscripts.github.io/circle-flags/flags/ch.svg"
+                <img src="https://hatscripts.github.io/circle-flags/flags/uk.svg"
                 width="30"
                 style={{marginRight: 10}}
                 onClick={() => {setLanguage(Language.DE)}}
@@ -19,7 +19,7 @@ export function LanguageIcons(){
     }else{
         return(
             <ActionIcon>
-                <img src="https://hatscripts.github.io/circle-flags/flags/uk.svg"
+                <img src="https://hatscripts.github.io/circle-flags/flags/ch.svg"
                 width="30"
                 style={{marginRight: 10}}
                 onClick={() => {setLanguage(Language.EN)}}

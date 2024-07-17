@@ -8,7 +8,7 @@ import {
   Transition,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-import { HEADER_HEIGHT } from '../../utils/constants';
+import { BUTTON_BORDER_RADIUS, HEADER_HEIGHT } from '../../utils/constants';
 import { useHeaderStyles } from './hooks/useHeaderStyles';
 import { DataService } from '../../services/DataService';
 import { Link } from 'react-router-dom';
@@ -31,6 +31,7 @@ export function HeaderResponsive() {
         setActive(link.link);
         close();
       }}
+      style={{borderRadius: BUTTON_BORDER_RADIUS}}
     >
       <RenderLanguageText text = {link.label}/>
     </Link>

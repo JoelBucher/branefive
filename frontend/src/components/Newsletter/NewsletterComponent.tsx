@@ -1,21 +1,23 @@
 import { Text, Button, Group, Grid, Avatar, MediaQuery } from '@mantine/core';
 import { useNewsletterStyle } from './hooks/useNewsletterStyle';
 import { AssetsService } from '../../services/AssetsService';
+import { NewsletterType } from './types/NewsletterType';
+import { DataService } from '../../services/DataService';
+import { RenderLanguageText } from '../../services/useLanguage';
+import { BUTTON_BORDER_RADIUS } from '../../utils/constants';
 
 function NewsletterText(){
   const { classes } = useNewsletterStyle();
+  const newsletterData : NewsletterType = DataService.getNewsletterData();
 
   return(
     <>
         <h1>
-          Join the Branefive{' '}
-          <Text component="span" variant="gradient" gradient={{ from: 'red', to: 'magenta' }} inherit>
-            Enjoyers Club
-          </Text>
+          <RenderLanguageText text={newsletterData.title}/>
         </h1>
 
         <p>
-          Get updates about new Song releases and upcoming gigs.
+          <RenderLanguageText text={newsletterData.subtitle}/>
         </p>
 
         <Group className={classes.controls}>
@@ -25,8 +27,9 @@ function NewsletterText(){
               href="https://chat.whatsapp.com/KgRlScf3rUMH1B4Ycu1VfS"
               variant= "filled"
               className={classes.control}
+              style={{borderRadius: BUTTON_BORDER_RADIUS}}
             >
-              Join now!
+              <p><RenderLanguageText text={newsletterData.buttonText}/></p>
             </Button>
         </Group>
         </>

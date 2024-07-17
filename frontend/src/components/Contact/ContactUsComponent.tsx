@@ -51,7 +51,7 @@ export function ContactUs() {
         <Space h={50}/>
         <Grid justify="center">
         <Grid.Col md={10} lg={7}>
-        <Paper shadow="md" radius="lg">
+        <Paper shadow="md">
           <div className={classes.wrapper}>
             <div className={classes.contacts}>
 

@@ -3,6 +3,7 @@ import { AlbumType } from '../types/AlbumType';
 import { AssetsService } from '../../../services/AssetsService';
 import { RenderLanguageText } from '../../../services/useLanguage';
 import { Spotify } from 'react-spotify-embed';
+import { BORDER_RADIUS } from '../../../utils/constants';
 
 interface AlbumParameter {
     album: AlbumType;
@@ -10,17 +11,11 @@ interface AlbumParameter {
 
 function AlbumImage({album} : AlbumParameter){
     return (
-        <Image maw={240} mx="auto" radius="md" src={AssetsService.get(album.assetId)} alt="Random image" />
+        <img width={240} src={AssetsService.get(album.assetId)} style={{borderRadius: BORDER_RADIUS}}/>
     );
 }
 
 export function Album({album} : AlbumParameter){
-    /*
-    <Grid.Col sm={8} orderSm={0}>
-                    <AlbumContent album={album}/>
-                </Grid.Col>
-
-                */
     return (
         <>
             <Grid>
@@ -35,7 +30,7 @@ export function Album({album} : AlbumParameter){
                     <AlbumImage album={album}/>
                 </Grid.Col>
                 <Grid.Col sm={8} orderSm={0}>
-                    <Spotify style={{borderRadius: 15}} height={152} wide link={album.spotifyLink} />
+                    <Spotify style={{borderRadius: 15}} height={400} wide link={album.spotifyLink} />
                 </Grid.Col>
             </Grid>
         </>

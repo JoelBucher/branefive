@@ -13,6 +13,7 @@ export function loadAssets(){
     assets.set('elija', require('../assets/elija.jpeg'))
     assets.set('elias', require('../assets/elias.jpeg'))
     assets.set('suvin', require('../assets/suvin.jpeg'))
+    assets.set('manuel', require('../assets/manuel.jpg'))
     assets.set('noah', require('../assets/noah.jpeg'))
     assets.set('julian', require('../assets/julian.jpeg'))
     assets.set('404', require('../assets/404.svg'))

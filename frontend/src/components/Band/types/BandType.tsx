@@ -6,6 +6,7 @@ export type BandType = {
     heroButtonText: LanguageText;
     heroPortrait : ImageType;
     heroLandscape : ImageType;
+    heroTitle: LanguageText;
     title: LanguageText;
     description: LanguageText;
     members: MemberType[];

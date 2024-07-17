@@ -7,6 +7,7 @@ import { ReactNode } from "react";
 import { AssetsService } from "../../services/AssetsService";
 import { useMediaQuery } from "@mantine/hooks";
 import { ShopType } from "./types/ShopType";
+import { BORDER_RADIUS, BUTTON_BORDER_RADIUS } from "../../utils/constants";
 
 export function ShopComponent() {
 	const classes = useShopStyle().classes;
@@ -39,7 +40,9 @@ export function ShopComponent() {
 						key={"card" + index}
 						p="md"
 						radius="md"
-						className={classes.card}>
+						className={classes.card}
+						style={{borderRadius: BORDER_RADIUS}}
+						>
 						<AspectRatio ratio={1920 / 1080}>
 							<Image src={AssetsService.get(product.productImage)} alt={product.productImage} />
 						</AspectRatio>
@@ -57,6 +60,7 @@ export function ShopComponent() {
 							href={product.buyLink}
 							target="_blank" // open in new tab
 							disabled={!product.available}
+							style={{borderRadius: BUTTON_BORDER_RADIUS}}
 						>
 							Buy
 						</Button>

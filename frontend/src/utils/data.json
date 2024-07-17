@@ -1,11 +1,9 @@
 {
     "header": {
         "links": [
-            {"link": "/", "label": {"en": "Home", "de": "Home"}},
-            {"link": "/band", "label": {"en": "Band", "de": "Band"}},
+            {"link": "/band", "label": {"en": "About", "de": "Band"}},
             {"link": "/tour", "label": {"en": "Tour", "de": "Tour"}},
-            {"link": "/music", "label": {"en": "Discography", "de": "Diskographie"}},
-            {"link": "/shop", "label": {"en": "Shop", "de": "Shop"}},
+            {"link": "/music", "label": {"en": "Music", "de": "Musik"}},
             {"link": "/contact", "label": {"en": "Contact", "de": "Kontakt"}}
         ]
     },
@@ -45,16 +43,16 @@
                 "title": "Singin' in Silence",
                 "assetId": "singinInSilence",
                 "description": {
-                    "en": "description english",
-                    "de": "Unsere erste EP \"Singin' in Silence\" wurde veröffentlicht!"},
+                    "en": "Branefive's debut EP refreshes with a versatile sound and a mix of different emotions.",
+                    "de": "Die Debut-EP von Branefive erfrischt mit einem vielseitigen Sound und einem Mix aus unterschiedlichen Emotionen."},
                 "spotifyLink": "https://open.spotify.com/album/0Afh8teKjnlL47yTy31GKV"
             },
             {
                 "title": "Free The Animal In You",
                 "assetId": "freeTheAnimalInYou",
                 "description": {
-                    "en": "description english",
-                    "de": "Unsere erste Single \"Free the Animal in You\" wurde veröffentlicht!"},
+                    "en": "The first single from Branefive! Free the animal in you, that's all there is to say.",
+                    "de": "Die erste Single von Branefive! Weck das Tier in dir, mehr gibt es hier nicht zu sagen."},
                 "spotifyLink": "https://open.spotify.com/album/3CG6UUdXpaI9c4NfzJqAwN"
             }
         ]
@@ -66,25 +64,7 @@
                 "name": "Enoteca da Ramundo",
                 "description": {"en": "", "de": ""},
                 "date": "2024-05-27T19:00:00Z",
-                "place": {"name": "Beromünster, CH", "latitute": 0, "longitude": 0}
-            },
-            {
-                "name": "Dorfturnier Baubu",
-                "description": {"en": "", "de": ""},
-                "date": "2024-07-08T21:00:00Z",
-                "place": {"name": "Ballwil, CH", "latitude": 0, "longitude": 0}
-            },
-            {
-                "name": "Städtlifäscht Risee",
-                "description": {"en": "", "de": ""},
-                "date": "2024-06-27T21:05:30",
-                "place": {"name": "Richensee, CH", "latitude": 0, "longitude": 0}
-            },
-            {
-                "name": "Seefestival Wädenswil",
-                "description": {"en": "", "de": ""},
-                "date": "2024-06-30T21:30:00",
-                "place": {"name": "Wädenswil, CH", "latitude": 0, "longitude": 0}
+                "place": {"name": "Beromünster, CH", "latitude": 0, "longitude": 0}
             }
         ]
     },
@@ -93,39 +73,52 @@
             "de": "Mehr erfahren",
             "en": "explore"
         },
+        "heroTitle":{
+            "de": [{"default": "Wir sind "}, {"gradient": "Branefive"}],
+            "en": [{"default": "Meet "}, {"gradient": "Branefive"}]
+        },
         "heroPortrait": {"assetId": "bandPortrait"},
         "heroLandscape": {"assetId": "bandLandscape"},
         "title": {"en": "Who we are", "de": "Wer wir sind"},
         "description": {
-            "en": "The rock band was found in November 2018 in Ermensee, a small town in the canton of Lucerne, Switzerland, by the 3 brothers Noah, Elija and Julian Müller as well as Elias Ruckstuhl. In early 2020, guitarist Suvin Blum joined the band. In winter '23, Manuel Birrer stepped into the band as the new bassist replacing Julian Müller, who can still be enjoyed playing the cornet live. Today, the style of Branefive varies from energetic alternative rock to pretty sensitive stuff, often with a pop structure as a foundation. In addition on live shows, Branefive loves to play covers of classics through the decades. It is an understatement to say that rock means the absolute world to them.",
-            "de": "Die Rockband schlug ihre Wurzeln ende November 2018 in Ermensee und bringt das Seetal heute regelmässig zum beben. Von den drei Brüdern Elija, Noah und Julian Müller sowie Elias Ruckstuhl unter dem Namen \"Armamsee\" gegründet, entdeckte die Band schon früh ihre Liebe für harten und leidenschaftlichen Rock. Seit Frühling 2020 ist auch der virtuose Gitarrist Suvin Blum mit an Bord. Im Winter 2023 hat Manuel Birrer den Bass von Julian Müller übernommen, der live immer noch auf dem Cornet zu bestaunen ist. Heute zeichnen sich die Songs von Branefive mit einer Abwechslung aus energischem Hardrock und gefühlvollen Passagen aus, häufig auf dem Sockel einer Popstruktur. Bei Live-Shows lieben es die Jungs zudem, Rockhymnen aus den vergangenen Jahrzehnten zum Besten zu geben. Der Rock hat ihre Herzen eingenommen und das wird sich auch nicht so schnell ändern."
+            "en": "The rock band put down its roots in Ermensee at the end of November 2018 and now regularly shakes up Central Switzerland. Founded by the three brothers Elija, Noah and Julian Müller and Elias Ruckstuhl under the name “Armamsee”, the band discovered their love for hard and passionate rock early on. Since spring 2020, virtuoso guitarist Suvin Blum has also been on board. In winter 2023, Manuel Birrer took over the bass from Julian Müller, who can still be admired live on the cornet. Today, Branefive's songs are characterized by an alternation of energetic hard rock and soulful passages. Rock has captured their hearts and that won't change any time soon.",
+            "de": "Die Rockband schlug ihre Wurzeln Ende November 2018 in Ermensee und bringt die Innerschweiz heute regelmässig zum Beben. Von den drei Brüdern Elija, Noah und Julian Müller sowie Elias Ruckstuhl unter dem Namen \"Armamsee\" gegründet, entdeckte die Band schon früh ihre Liebe für harten und leidenschaftlichen Rock. Seit Frühling 2020 ist auch der virtuose Gitarrist Suvin Blum mit an Bord. Im Winter 2023 hat Manuel Birrer den Bass von Julian Müller übernommen, der live immer noch auf dem Cornet zu bestaunen ist. Heute zeichnen sich die Songs von Branefive mit einer Abwechslung aus energischem Hardrock und gefühlvollen Passagen aus. Der Rock hat ihre Herzen eingenommen und das wird sich auch nicht so schnell ändern."
         },
         "members": [
             {
                 "name": "Elias",
-                "description": {"en": "Lead Vocals", "de": "Leadgesang"},
                 "assetId": "elias",
                 "properties": [
                     {
                         "iconAssetId": "microphone",
-                        "description": {"en": "Frontman and head of our band. He loves to whisper in your year and then belt with all his passion out into the world.", "de": "Frontman und Leadsänger von Branefive. Auch ohne gut hinzuhören, hört man seine Seele und sein Herz für den Rock in seiner Stimme. "}
+                        "description": {"en": "Lead Vocals", "de": "Gesang"}
                     }
-                ]
+                ],
+                "description": {
+                            "de": "Mit seiner kernigen und gefühlvollen Stimme lässt der Frontman auch das Publikum in der hintersten Reihe nicht kalt. Taucht in jeden Song ein wie die Titanic im Nordatlantik.",
+                            "en": "With his pithy and soulful voice, the frontman doesn't leave the audience in the back row cold either. He dives into every song like the Titanic into the North Atlantic."
+                        }
             },
             {
                 "name": "Noah",
-                "description": {"en": "Rhythm Guitarist and Backing Vocals", "de": "Rhythmusgitarrist und Backgroundgesang"},
                 "assetId": "noah",
                 "properties": [
                     {
-                        "iconAssetId": "guitar",
-                        "description": {"en": "Without Noah, Branefive wouldn't work. Many riffs and structures are of his origin and he is always dedicated to write new songs.", "de": "Als Rhythmusgitarrist und Komponist vieler wichtiger Riffs ist Noah von Branefive nicht wegzudenken. "}
+                        "iconAssetId": "music",
+                        "description": {"en": "Rhythm Guitar", "de": "Gitarre"}
                     }
-                ]
+                ],
+                "description": {
+                            "en": "Just like the fringes in front of his eyes, the people in the hall dance when Noah belts out his rocking riffs. But he can also be very delicate and dreamy when the ballads are played.",
+                            "de": "Genauso wie die Fransen vor seinen Augen tanzen auch die Leute im Saal, wenn Noah seine rockigen Riffs herunterbrettert. Er kann aber auch ganz fein und verträumt, wenn die Balladen angespielt werden."
+                        }
             },
             {
                 "name": "Elija",
-                "description": {"en": "Elija, the rhythmic machine behind Branefive. Loves to hit everything on the drum that belongs to sweet old rock n' roll.", "de": "Elija ist die rhythmische Maschine hinter Branefive, er gibt den Takt vor. Für guten alten Rock n' Roll haut er alles aus seinem Schlagzeug heraus."},
+                "description": {
+                    "en": "Elija, the rhythmic machine behind Branefive. Loves to hit everything on the drum that belongs to sweet old rock n' roll.",
+                    "de": "Elija ist die rhythmische Maschine hinter Branefive, er gibt den Takt vor. Für guten alten Rock n' Roll haut er alles aus seinem Schlagzeug heraus."
+                },
                 "assetId": "elija",
                 "properties": [
                     {
@@ -136,29 +129,39 @@
             },
             {
                 "name": "Suvin",
-                "description": {"en": "Leadgitarrist", "de": "Lead Guitar"},
                 "assetId": "suvin",
                 "properties": [
                     {
                         "iconAssetId": "music",
-                        "description": {"en": "If you feel like on a stairway to heaven now, your probably enjoying Suvin's guitar solo. He bends it, he pulls it off with a lot of class and masterpiece", "de": "Wenn man eine Gitarre himmlisch singen hört, dann ist Suvin in seinem Element. Virtuos und bescheiden, wie man ihn auf der Bühne kennt."}
+                        "description": {"en": "Lead Guitar", "de": "Gitarre"}
                     }
-                ]
+                ],
+                "description": {
+                    "en": "With his cap pulled low over his face, Suvin sings his solos and enchants everyone. Virtuoso like Slash, but modest like a student on vacation.",
+                    "de": "Das Cap tief ins Gesicht gezogen, singt Suvin seine Soli und verzückt alle. Virtuos wie Slash, aber bescheiden wie ein Student in den Ferien."
+                }
             },
             {
-                "name": "Julian",
-                "description": {"en": "Cornet", "de": "Cornet"},
-                "assetId": "julian",
+                "name": "Manuel",
+                "assetId": "manuel",
                 "properties": [
                     {
                         "iconAssetId": "music",
-                        "description": {"en": "Julian takes you to another universe with the sounds of his cornet.", "de": "Julian nimmt dich mit auf eine Reise in andere Sphären, wenn sein Cornet erklingt."}
+                        "description": {"en": "Bass", "de": "Bass"}
                     }
-                ]
+                ],
+                "description": {
+                    "en": "The bass notes chug along under the songs like an engine until he suddenly starts slapping. Stoic and unbeatable coolness, just like a bassist.",
+                    "de": "Wie ein Motor tuckern die Basstöne unter den Songs hindurch, bis er plötzlich zu Slappen anfängt. Stoisch und an Coolness nicht zu überbieten, wie es ein Bassist halt ist."
+                }
             }
         ]
     },
     "news": {
+        "heroTitle": {
+            "de": [{"gradient": "news"}],
+            "en": [{"default": "stay "}, {"gradient": "up to date"}]
+        },
         "stories": [
             {
                 "storyId": "summer-2023",
@@ -349,5 +352,19 @@
         "address2": "Rankstrasse 4",
         "address3": "6294 Ermensee",
         "phone": "041 917 01 18"
+    },
+    "newsletter": {
+        "title": {
+            "de": [{"default": "Komm in den\nBranefive\n"}, {"gradient": "Enjoyers Club"}],
+            "en": [{"default": "Join the\nBranefive\n"}, {"gradient": "Enjoyers Club"}]
+        },
+        "subtitle": {
+            "de": "text deutsch",
+            "en": "Get updates about new Song releases and upcoming gigs."
+        },
+        "buttonText": {
+            "de": "beitreten",
+            "en": "join now!"
+        }
     }
 }

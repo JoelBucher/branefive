@@ -7,9 +7,9 @@ import { useTourNextEventStyle as useTourStyle } from "../hooks/useTourNextEvent
 
 function getEventTitle(event : EventType){
   if(new Date(event.date) < new Date()){
-    return <>{event.name} {' '} <Badge color="red">passed</Badge></>
+    return <p style={{marginTop:-5}}>{event.name} {' '} <Badge color="red">passed</Badge></p>
   }
-  return <>{event.name}</>;
+  return <p style={{marginTop:-5}}>{event.name}</p>;
 }
 
 export function TourTimeline() {
@@ -34,8 +34,8 @@ export function TourTimeline() {
     <Timeline active={futureEvents} bulletSize={20} lineWidth={4} color={"red"}>
       {sorted.map((event, index) => 
         <Timeline.Item title={getEventTitle(event)} lineVariant={index < futureEvents ? "solid" : "dotted"} key={index} className={classes.timeline}>
-          <Text size="sm" mt={4}>{DateTimeService.formatDate(event.date)}</Text>
-          <Text size="sm" mt={4}>{event.place.name}</Text>
+          <p style={{fontSize: 15, lineHeight: 0.4}}>{DateTimeService.formatDate(event.date)}</p>
+          <p style={{fontSize: 15, lineHeight: 0.4}}>{event.place.name}</p>
         </Timeline.Item>
       )}
     </Timeline>

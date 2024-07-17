@@ -7,6 +7,7 @@ import { NewsType } from "../components/Story/types/NewsType";
 import { ShopType } from "../components/Shop/types/ShopType";
 import { GalleryType } from "../components/Gallery/types/GalleryType";
 import { ContactType } from "../components/Contact/types/ContactType";
+import { NewsletterType } from "../components/Newsletter/types/NewsletterType";
 
 export type WebsiteData = {
     header: HeaderData;
@@ -18,4 +19,5 @@ export type WebsiteData = {
     shop: ShopType;
     gallery: GalleryType;
     contact: ContactType;
+    newsletter: NewsletterType;
 }

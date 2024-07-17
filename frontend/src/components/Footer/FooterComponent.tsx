@@ -25,7 +25,7 @@ function FooterLink({group} : FooterLinkGroupParameter){
       <br></br>
     </div>
   );
-      return <>{links}</>
+      return <p style={{fontSize: 15}}>{links}</p>
     }
   
 function FooterGroup(props : {groups : FooterLinkGroup[]}){
@@ -33,7 +33,9 @@ function FooterGroup(props : {groups : FooterLinkGroup[]}){
   
   const groups = props.groups.map((group, index) =>
     <div className={classes.wrapper} key={index}>
-      <Text className={classes.title}>{group.title}</Text>
+      <p style={{fontSize: 20}}>
+        {group.title}
+      </p>
       <FooterLink group = {group}/>
     </div>
   );
@@ -69,18 +71,19 @@ export function FooterResponsive() {
               <img src={logo} height={45} alt='logo'/>
             </Link>
 
-            <Text size="xs" color="dimmed" className={classes.description}>
+
+            <p style={{fontSize: 15, color: "grey"}}>
               <RenderLanguageText text = {data.slogan}/>
-            </Text>
+            </p>
           </div>
           <div className={classes.groups}>
             <FooterGroup groups = {data.linkGroups}/>
           </div>
         </Container>
         <Container className={classes.afterFooter}>
-          <Text color="dimmed" size="sm">
+          <p style={{fontSize: 15, color: "grey"}}>
             <RenderLanguageText text = {data.copyright}/>
-          </Text>
+          </p>
   
           <Group spacing={0} className={classes.social} position="right" noWrap>
             <Socials socials = {data.socials}/>

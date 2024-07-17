@@ -59,7 +59,6 @@ export const useContactUsStyle = createStyles((theme) => {
     contacts: {
       boxSizing: 'border-box',
       position: 'relative',
-      borderRadius: theme.radius.lg,
       backgroundImage: `linear-gradient(-60deg, ${theme.colors.red[5]} 0%, ${theme.colors.red[7]} 100%)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
