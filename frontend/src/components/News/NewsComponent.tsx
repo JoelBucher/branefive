@@ -31,10 +31,12 @@ export function NewsComponent(){
                 <AspectRatio ratio={1920 / 1080}>
                     <Image src={AssetsService.get(story.storyCardImage)} />
                 </AspectRatio>
-                <h3>
+                <p style={{fontSize: 15}} >
                     {story.date}
+                </p>
+                <h3 style={{fontSize: 20, marginTop: -10}}>
+                    <RenderLanguageText text={story.title}/>
                 </h3>
-                <Text color="white"><RenderLanguageText text={story.title}/></Text>
             </Card>
         </Carousel.Slide>
     ));

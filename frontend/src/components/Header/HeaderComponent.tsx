@@ -33,7 +33,9 @@ export function HeaderResponsive() {
       }}
       style={{borderRadius: BUTTON_BORDER_RADIUS}}
     >
+      <p style={{fontSize: 20}}>
       <RenderLanguageText text = {link.label}/>
+      </p>
     </Link>
   );
 
@@ -41,7 +43,7 @@ export function HeaderResponsive() {
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
         <Link to={"/"}>
-          <img src={logo} height={45} alt="logo"/>
+          <img src={logo} height={80} alt="logo"/>
         </Link>
         <Group spacing={5} className={classes.links}>
           {items}

@@ -23,7 +23,7 @@ export function Tour() {
   }
 
   return (
-    <Grid align='center' justify='center'>
+    <Grid align='center' justify='center' style={{marginTop: 50}}>
       <Grid.Col sm={10} lg={8}>
         <TourNextEvent/>
 
@@ -34,6 +34,7 @@ export function Tour() {
 
           {!isMdOrSmaller && sideImage()}
         </Grid>
+
       </Grid.Col>
     </Grid>
   );

@@ -5,23 +5,18 @@ import { DataService } from "../../services/DataService";
 import { LanguageText } from "../../types/LanguageText";
 import { MemberType } from "./types/MemberType";
 import { MemberPropertyType } from "./types/MemberPropertyType";
-import { IconService } from "../../services/IconService";
 import { RenderLanguageText } from "../../services/useLanguage";
 import { BORDER_RADIUS } from "../../utils/constants";
 
 function MemberPropertyTable(props : {properties : MemberPropertyType[]}){
 
     const tableRows = props.properties.map((property, index) => {
-        const Icon = IconService.get(property.iconAssetId);
-        if(Icon !== undefined){
-            return(
-                <tr key={index}>
-                    <td><Icon/></td>
-                    <td><RenderLanguageText text = {property.description}/></td>
-                </tr>
-            )
-        }
-        return(<></>);
+        return(
+            <tr key={index}>
+                <td><img src={property.iconAssetId}></img></td>
+                <td><RenderLanguageText text = {property.description}/></td>
+            </tr>
+        )
     });
 
     return(
@@ -75,7 +70,7 @@ export function BandHeader(){
 
 export function Band(){
     return(
-        <>
+        <div style={{marginTop: 50}}>
         <BandHeader/>
         <Grid justify="center" mt={30}>
             <Grid.Col md={10} sm={12}>
@@ -84,6 +79,6 @@ export function Band(){
                 </Carousel>
             </Grid.Col>
         </Grid>
-        </>
+        </div>
     )
 }

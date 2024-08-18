@@ -1,15 +1,15 @@
 {
     "header": {
         "links": [
-            {"link": "/band", "label": {"en": "About", "de": "Band"}},
-            {"link": "/tour", "label": {"en": "Tour", "de": "Tour"}},
-            {"link": "/music", "label": {"en": "Music", "de": "Musik"}},
-            {"link": "/contact", "label": {"en": "Contact", "de": "Kontakt"}}
+            {"link": "/band", "label": {"en": "ABOUT", "de": "BAND"}},
+            {"link": "/tour", "label": {"en": "TOUR", "de": "TOUR"}},
+            {"link": "/music", "label": {"en": "MUSIC", "de": "MUSIK"}},
+            {"link": "/contact", "label": {"en": "CONTACT", "de": "KONTAKT"}}
         ]
     },
     "footer": {
         "slogan": {"en": "Brave. Brute. Branefive.", "de": "Die Rockband, nach der du gesucht hast."},
-        "copyright": {"en": "© 2023 Branefive. All rights reserved.", "de": "© 2023 Branefive. All rights reserved."},
+        "copyright": {"en": "© 2024 Branefive. All rights reserved.", "de": "© 2024 Branefive. All rights reserved."},
         "socials": [
             {"iconAssetId": "instagram", "link": "https://www.instagram.com/branefive/"},
             {"iconAssetId": "youtube", "link": "https://www.youtube.com/channel/UC1s8bT-0Gx733lNNcngFxrw/videos?app=desktop&view=0&sort=dd&shelf_id=0"},
@@ -61,17 +61,29 @@
         "tourImage": "tour",
         "events": [
             {
-                "name": "Enoteca da Ramundo",
+                "name": "Metbar",
                 "description": {"en": "", "de": ""},
-                "date": "2024-05-27T19:00:00Z",
-                "place": {"name": "Beromünster, CH", "latitude": 0, "longitude": 0}
+                "date": "2024-06-01T20:00:00Z",
+                "place": {"name": "Lenzburg, CH", "latitude": 0, "longitude": 0}
+            },
+            {
+                "name": "Synergia OpenAir Festival",
+                "description": {"en": "", "de": ""},
+                "date": "2024-09-13T20:00:00Z",
+                "place": {"name": "Effretikon, CH", "latitude": 0, "longitude": 0}
+            },
+            {
+                "name": "Schüür, feat. Jack Slamer",
+                "description": {"en": "", "de": ""},
+                "date": "2024-09-28T20:30:00Z",
+                "place": {"name": "Luzern, CH", "latitude": 0, "longitude": 0}
             }
         ]
     },
     "band": {
         "heroButtonText": {
-            "de": "Mehr erfahren",
-            "en": "explore"
+            "de": "MEHR ERFAHREN",
+            "en": "EXPLORE"
         },
         "heroTitle":{
             "de": [{"default": "Wir sind "}, {"gradient": "Branefive"}],
@@ -122,7 +134,7 @@
                 "assetId": "elija",
                 "properties": [
                     {
-                        "iconAssetId": "music",
+                        "iconAssetId": "music.svg",
                         "description": {"en": "Drums", "de": "Schlagzeug"}
                     }
                 ]
@@ -164,35 +176,36 @@
         },
         "stories": [
             {
-                "storyId": "summer-2023",
-                "title": {"en": "BRANEFIVE in Summer of '23", "de": "BRANEFIVE im Sommer '23"},
-                "storyCardImage": "richensee",
-                "date": "2. März 2023",
+                "storyId": "gigs-24",
+                "title": {"en": "GIGS IN AUTUMN 2024", "de": "GIGS IM HERBST 2024"},
+                "storyCardImage": "suvin-prellt",
+                "date": "18. August 2024",
                 "blocks":[
                     {
                         "title": {
-                            "en": "BRANEFIVE in Summer of '23",
-                            "de": "BRANEFIVE im Sommer '23"
+                            "en": "GIGS IN AUTUMN 2024",
+                            "de": "GIGS IM HERBST 2024"
                         }
                     },
                     {
                         "text": {
-                            "en": "It's all about gigs and songwriting this summer for Branefive. The young guys from Seetal can be met on stage inside and outside their territory. Click on \"Tour\" for their future concerts and come visit us! See you, meanwhile we are laying the foundation for our first big album. Branefive out!",
-                            "de": "Gigs und Songwriting steht auch diesen Sommer wieder auf der Bucketlist der Band. Die jungen Seetaler sind in- und ausserhalb ihrer Heimat auf Bühnen anzutreffen, schau unter \"Tours\" vorbei, wir freuen uns auf dich! Ein paar neue Songs werden ihre Uraufführung feiern und du geniesst heissen Rock zu einem kühlen Bier. Bis dann, wir betonieren unterdessen den Sockel für das erste grosse Album :)"
+                            "en": " See where you can see us live on tour! First we're going to the Synergia Openair in Effretikon on 13.9. and then back to the Schüür on 28.9. where we'll be supporting Jack Slamer. We look forward to seeing you! Rock on!",
+                            "de": "Schau unter Tour, wo du uns live erleben kannst! Als erstes geht es am 13.9. an das Synergia Openair nach Effretikon, anschliessend am 28.9. in die Schüür zurück, wo wir Jack Slamer supporten. Wir freuen uns auf euch! Rock on!"
                         }
                     }
                 ]
             },
+
             {
                 "storyId": "singin-in-silence",
-                "title": {"en": "SINGIN' IN SILENCE is here!", "de": "SINGIN' IN SILENCE ist da!"},
-                "storyCardImage": "richensee",
-                "date": "23. Januar 2023",
+                "title": {"en": "SINGIN' IN SILENCE IS HERE!", "de": "SINGIN' IN SILENCE IST DA!"},
+                "storyCardImage": "singinInSilence",
+                "date": "7. Oktober 2022",
                 "blocks":[
                     {
                         "title": {
-                            "en": "SINGIN' IN SILENCE is here!",
-                            "de": "SINGIN' IN SILENCE ist da!"
+                            "en": "SINGIN' IN SILENCE IS HERE!",
+                            "de": "SINGIN' IN SILENCE IST DA!"
                         }
                     },
                     {
@@ -208,59 +221,15 @@
                 ]
             },
             {
-                "storyId": "jahresrueckblick",
-                "title": {"en": "test test", "de": "test test"},
-                "storyCardImage": "richensee",
-                "date": "11. Dezember 2022",
-                "blocks":[
-                    {
-                        "title": {
-                            "en": "",
-                            "de": "Jahresrückblick 2021: Grosses Merci und kleiner Ausblick"
-                        }
-                    },
-                    {
-                        "text": {
-                            "en": "Text not availabe in english.",
-                            "de": "Am 23. Oktober 2021 durften wir endlich öffentlich unsere Klänge zum Besten geben. Wir sagen herzlich Danke bei allen, die tatkräftig mitgeholfen haben, dieses Konzert zu verwirklichen und natürlich bei allen Zuhörenden. Unser erster eigens organisierter Anlass brachte Jung und Alt zusammen und die Musik zurück, wo sie hingehört - live auf die Bühne. Nach einem weiteren Bandjahr, in dem wir besonders in musikalischer Hinsicht kräftig wachsen konnten, wird Branefive im November dreijährig. Die ganz grosse Bühne wartet zwar im Moment noch, unsere verschworene Truppe hat aber nun so einiges vor: Im Frühjar 2022 wollen wir die lang ersehnte EP aufnehmen und rausbringen! Mit dabei sein sollen unter anderem Singin' in the Silence und Meant to Be, die ihr auch schon live erleben durftet. Dies als kleiner Vorgeschmack. Denn wenn Corona endlich vorbei ist, können wir uns nur noch selber aufhalten ;)"
-                        }
-                    }
-                ]
-            },
-            {
-                "storyId": "christmas-wishes-2021",
-                "title": {"en": "test test", "de": "test test"},
-                "storyCardImage": "richensee",
-                "date": "21. Dezember 2021",
-                "blocks":[
-                    {
-                        "title": {
-                            "en": "December 2021: Branefive is back",
-                            "de": "Dezember 2021: Weihnachtliche Grüsse von Branefive"
-                        }
-                    },
-                    {
-                        "text": {
-                            "en": "Right on Christmas eve, Branefive is back! Nonetheless, covering Mariah Carey's absolute classic \"All I Want For Christmas Is You\". It is the project to end an important year for us. We took up songwriting in spring, released our first single in late summer and had time to plan our first EP in 2021 as well as doing projects like this cover (which was actually pretty funny to film and record). We would like to thank our friends and families for their fabulous support wherever we needed it. A big Thank You also to our donors, who made the release of our first single even possible, to the shortwave radios Channel 292 and WRMI, and last but not least, to our listeners and viewers from all over the globe. And now, we wish you a merry Christmas with \"All I Want For Christmas Is You\"!",
-                            "de": "Pünktlich zu Weihnachten sind wir zurück - mit einem Cover des absoluten Klassikers \"All I Want For Christmas Is You\" von Mariah Carey. Wir bringen damit ein Jahr zu Ende, in dem Branefive die erste Single veröffentlicht hat, an einer EP für das nächste Jahr schrieb und zwischendurch auch einfach nur solche Ideen wie diese hier hatte. Wir bedanken uns ganz herzlich bei unseren Freunden und Familien, die uns bei all unseren Projekten mit viel Herzblut unterstützt haben. Ein grosses Merci auch an unsere Spender, die den Release der Single erst ermöglicht hatten, an die Kurzwellen-Radiosender Channel 292 und WRMI und natürlich an unsere Hörer und Zuschauer aus der ganzen Welt. Und jetzt wünschen wir euch erholsame Weihnachten mit \"All I Want For Christmas Is You\"!"
-                        }
-                    },
-                    {"space": 50},
-                    {
-                        "url": "https://www.youtube.com/embed/nOiZzYpirEg"
-                    }
-                ]
-            },
-            {
                 "storyId": "free-the-animal-in-you",
-                "title": {"en": "", "de": ""},
-                "storyCardImage": "richensee",
-                "date": "23. September 2021",
+                "title": {"en": "OUR FIRST SINGLE", "de": "UNSERE ERSTE SINGLE!"},
+                "storyCardImage": "freeTheAnimalInYou",
+                "date": "25. September 2020",
                 "blocks":[
                     {
                         "title": {
-                            "en": "September 2020: Our first single",
-                            "de": "September 2020: Unsere Erste Single!"
+                            "en": "OUR FIRST SINGLE",
+                            "de": "UNSERE ERSTE SINGLE!"
                         }
                     },
                     {
@@ -345,7 +314,7 @@
         },
         "subtitle": {
             "de": "Schreiben Sie uns oder rufen sie an",
-            "en": "naisenfordu"
+            "en": "Text us or give us a call"
         },
         "mail": "info[at]branefive.com",
         "address1": "Branefive",
@@ -359,12 +328,12 @@
             "en": [{"default": "Join the\nBranefive\n"}, {"gradient": "Enjoyers Club"}]
         },
         "subtitle": {
-            "de": "text deutsch",
+            "de": "Informiere dich über neue Songs und kommende Gigs.",
             "en": "Get updates about new Song releases and upcoming gigs."
         },
         "buttonText": {
-            "de": "beitreten",
-            "en": "join now!"
+            "de": "BEITRETEN!",
+            "en": "JOIN NOW!"
         }
     }
 }

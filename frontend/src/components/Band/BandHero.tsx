@@ -25,18 +25,24 @@ export function BandHero(){
     return (
         <BackgroundImage src={AssetsService.get(bestFitImage.assetId)} style={{height: window.innerHeight}}>
             <Grid align='center' justify='center'>
-                <Grid.Col sm={10} lg={8}>
+                <Grid.Col sm={4} lg={4} key={0}>
                         <h1>
                             <RenderLanguageText text={heroTitle}/>
                         </h1>
-                        <Space h={10}/>
-                        <Button
-                            className={classes.button}
+                        
+                </Grid.Col>
+                <Grid.Col sm={4} lg={4} key={1}>
+                    <Button
+                            size="xl"
                             component="a"
+                            variant= "filled"
                             href="#/band"
+                            color="red"
                             style={{borderRadius: BUTTON_BORDER_RADIUS}}
-                        >
-                            <p><RenderLanguageText text={buttonText}/></p>
+                            >
+                            <p>
+                                <RenderLanguageText text={buttonText}/>
+                            </p>
                         </Button>
                 </Grid.Col>
             </Grid>
