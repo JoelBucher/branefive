@@ -1,9 +1,46 @@
-import { Timeline, Badge } from "@mantine/core";
+import { Timeline, Badge, Grid, Col, Button } from "@mantine/core";
 import { DataService } from "../../../services/DataService";
 import { EventType } from "../types/EventType";
 import { TourType } from "../types/TourType";
 import { DateTimeService } from "../../../services/DateTimeService";
 import { useTourNextEventStyle as useTourStyle } from "../hooks/useTourNextEventStyle";
+import { IconTicket } from "@tabler/icons-react";
+import { BUTTON_BORDER_RADIUS, THEME_COLOR } from "../../../utils/constants";
+
+function ticketButton(event: EventType){
+  return(
+    <table>
+    <tbody>
+      <tr>
+        <td>
+          <p style={{fontSize: 15}}>Tickets</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+        <Button
+          size="md"
+          component="a"
+          variant= "filled"
+          href={event.ticketLink == null ? "" : event.ticketLink}
+          disabled={event.ticketLink == null}
+          sx={{
+              backgroundColor: THEME_COLOR,
+              '&:hover': {
+                  backgroundColor: THEME_COLOR,
+              },
+          }}
+          style={{borderRadius: BUTTON_BORDER_RADIUS, marginTop: -20}}
+          >
+          <p>
+            <IconTicket size={40} color="white"/>
+          </p>
+        </Button>
+        </td>
+      </tr>
+    </tbody>
+  </table>);
+}
 
 function getEventTitle(event : EventType){
   if(new Date(event.date) < new Date()){
@@ -55,9 +92,16 @@ export function TourTimeline() {
           key={index}
           className={classes.timeline}
           >
-
-          <p style={{fontSize: 15, lineHeight: 0.4}}>{DateTimeService.formatDate(event.date)}</p>
-          <p style={{fontSize: 15, lineHeight: 0.4}}>{event.place.name}</p>
+            <Grid columns={24}>
+              <Col span={12}>
+                <p style={{fontSize: 15, lineHeight: 0.4}}>{DateTimeService.formatDate(event.date)}</p>
+                <p style={{fontSize: 15, lineHeight: 0.4}}>{event.place.name}</p>
+              </Col>
+              <Col span={12} style={{ display: 'flex', justifyContent: 'flex-end', marginTop: -40}} >
+                {(event.showTicketLink && index <= futureEvents) ? ticketButton(event) : <></>}
+              </Col>
+            </Grid>
+          
         </Timeline.Item>
       )}
     </Timeline>

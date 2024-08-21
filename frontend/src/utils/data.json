@@ -64,19 +64,25 @@
                 "name": "Metbar",
                 "description": {"en": "", "de": ""},
                 "date": "2024-06-01T20:00:00Z",
-                "place": {"name": "Lenzburg, CH", "latitude": 0, "longitude": 0}
+                "place": {"name": "Lenzburg, CH", "latitude": 0, "longitude": 0},
+                "ticketLink": "https://www.eventfrog.ch",
+                "showTicketLink": false
             },
             {
                 "name": "Synergia OpenAir Festival",
                 "description": {"en": "", "de": ""},
                 "date": "2024-09-13T20:00:00Z",
-                "place": {"name": "Effretikon, CH", "latitude": 0, "longitude": 0}
+                "place": {"name": "Effretikon, CH", "latitude": 0, "longitude": 0},
+                "ticketLink": "https://www.eventfrog.ch",
+                "showTicketLink": false
             },
             {
                 "name": "Schüür, feat. Jack Slamer",
                 "description": {"en": "", "de": ""},
                 "date": "2024-09-21T20:30:00Z",
-                "place": {"name": "Luzern, CH", "latitude": 0, "longitude": 0}
+                "place": {"name": "Luzern, CH", "latitude": 0, "longitude": 0},
+                "ticketLink": "https://www.eventfrog.ch",
+                "showTicketLink": false
             }
         ]
     },
@@ -190,7 +196,7 @@
                     {
                         "text": {
                             "en": " See where you can see us live on tour! First we're going to the Synergia Openair in Effretikon on 13.9. and then back to the Schüür on 28.9. where we'll be supporting Jack Slamer. We look forward to seeing you! Rock on!",
-                            "de": "Schau unter Tour, wo du uns live erleben kannst! Als erstes geht es am 13.9. an das Synergia Openair nach Effretikon, anschliessend am 28.9. in die Schüür zurück, wo wir Jack Slamer supporten. Wir freuen uns auf euch! Rock on!"
+                            "de": "Schau unter Tour, wo du uns live erleben kannst! Als erstes geht es am 13.9. an das Synergia Openair nach Effretikon, anschliessend am 21.9. in die Schüür zurück, wo wir Jack Slamer supporten. Wir freuen uns auf euch! Rock on!"
                         }
                     }
                 ]

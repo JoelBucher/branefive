@@ -6,11 +6,15 @@ export type EventType = {
     description: LanguageText;
     date: string;
     place: PlaceType;
+    ticketLink: string
+    showTicketLink: boolean
 }
 
 export const EmptyEvent : EventType = {
     name: "",
     description: EmptyLanguageText,
     date: "",
-    place: EmptyPlace
+    place: EmptyPlace,
+    ticketLink: "",
+    showTicketLink: false
 }

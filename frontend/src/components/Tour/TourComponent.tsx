@@ -1,4 +1,4 @@
-import { Grid } from '@mantine/core';
+import { Grid, Space } from '@mantine/core';
 import { TourTimeline } from './components/TourTimeline';
 import { TourNextEvent } from './components/TourNextEvent';
 import { AssetsService } from '../../services/AssetsService';
@@ -24,7 +24,7 @@ export function Tour() {
     <Grid justify='center' style={{marginTop: 50}}>
       <Grid.Col sm={5} lg={4}>
         <TourNextEvent/>
-
+        <Space h={20}/>
         <TourTimeline/>
       </Grid.Col>
       <Grid.Col sm={5} lg={4}>

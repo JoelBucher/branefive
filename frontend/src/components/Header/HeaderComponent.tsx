@@ -43,7 +43,7 @@ export function HeaderResponsive() {
     <Header height={HEADER_HEIGHT} className={classes.root}>
       <Container className={classes.header}>
         <Link to={"/"}>
-          <img src={logo} height={80} alt="logo"/>
+          <img src={logo} height={60} alt="logo"/>
         </Link>
         <Group spacing={5} className={classes.links}>
           {items}
