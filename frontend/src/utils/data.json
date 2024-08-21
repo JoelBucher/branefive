@@ -73,16 +73,16 @@
                 "description": {"en": "", "de": ""},
                 "date": "2024-09-13T20:00:00Z",
                 "place": {"name": "Effretikon, CH", "latitude": 0, "longitude": 0},
-                "ticketLink": "https://www.eventfrog.ch",
-                "showTicketLink": false
+                "ticketLink": "https://synergia-openair.ch/index.html#tickets",
+                "showTicketLink": true
             },
             {
                 "name": "Schüür, feat. Jack Slamer",
                 "description": {"en": "", "de": ""},
                 "date": "2024-09-21T20:30:00Z",
                 "place": {"name": "Luzern, CH", "latitude": 0, "longitude": 0},
-                "ticketLink": "https://www.eventfrog.ch",
-                "showTicketLink": false
+                "ticketLink": "https://www.seetickets.com/ch/event/jack-slamer/konzerthaus-schuur/3064748?PartnerID=116&src=web",
+                "showTicketLink": true
             }
         ]
     },
