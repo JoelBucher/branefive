@@ -1,4 +1,4 @@
-import { AspectRatio, Card, Text, Image, Container, SimpleGrid, Title, Space, Grid } from "@mantine/core";
+import { AspectRatio, Card, Image, Space, Grid } from "@mantine/core";
 import { useNewsStyle } from "./hooks/useNewsStyle";
 import { DataService } from "../../services/DataService";
 import { StoryType } from "../Story/types/StoryType";
@@ -54,7 +54,7 @@ export function NewsComponent(){
             align="start"
             withIndicators
             height={300}
-            slideSize="33.333333%"
+            slideSize={isMdOrSmaller ? "80%" : "33.333333%"}
             slideGap="md"
             >
             {cards}

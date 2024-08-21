@@ -1,5 +1,5 @@
-import { createStyles, rem } from '@mantine/core';
-import { HEADER_HEIGHT } from '../../../utils/constants';
+import { createStyles } from '@mantine/core';
+import { HEADER_HEIGHT, THEME_COLOR } from '../../../utils/constants';
 
 export const useHeaderStyles = createStyles((theme) => ({
     root: {
@@ -65,8 +65,8 @@ export const useHeaderStyles = createStyles((theme) => ({
   
     linkActive: {
       '&, &:hover': {
-        backgroundColor: theme.colors.red[6],
-        color: theme.fn.variant({ variant: 'light', color: theme.colors.red[6] }).color,
+        backgroundColor: THEME_COLOR, // 6
+        color: theme.fn.variant({ variant: 'light', color: THEME_COLOR }).color, // 6
       },
     },
   }));

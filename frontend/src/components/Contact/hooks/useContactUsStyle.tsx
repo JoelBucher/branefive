@@ -1,4 +1,5 @@
 import {createStyles, rem } from '@mantine/core';
+import { THEME_COLOR } from '../../../utils/constants';
 
 export const useContactUsStyle = createStyles((theme) => {
   const BREAKPOINT = theme.fn.smallerThan('sm');
@@ -59,7 +60,7 @@ export const useContactUsStyle = createStyles((theme) => {
     contacts: {
       boxSizing: 'border-box',
       position: 'relative',
-      backgroundImage: `linear-gradient(-60deg, ${theme.colors.red[5]} 0%, ${theme.colors.red[7]} 100%)`,
+      backgroundImage: `linear-gradient(-60deg, ${THEME_COLOR} 0%, ${theme.colors.red[7]} 100%)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       border: `${rem(1)} solid transparent`,

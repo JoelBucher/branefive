@@ -23,6 +23,14 @@ export function loadAssets(){
     assets.set('tour', require('../assets/tour.jpg'))
     assets.set('bandLandscape', require('../assets/landscape.jpg'))
     assets.set('bandPortrait', require('../assets/portrait.jpg'))
+    assets.set('suvin-prellt', require('../assets/suvin-prellt.jpg'))
+    assets.set('guitar1', require('../assets/guitar1.png'))
+    assets.set('guitar2', require('../assets/guitar2.png'))
+    assets.set('microphone', require('../assets/microphone.png'))
+    assets.set('music', require('../assets/music.png'))
+    assets.set('drums', require('../assets/drums.png'))
+
+
     return assets;
 }
 

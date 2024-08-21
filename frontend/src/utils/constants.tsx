@@ -6,3 +6,5 @@ export const ZERO_DURATION : DurationType= {days: 0, hours: 0, minutes: 0, secon
 
 export const BORDER_RADIUS : number = 0;
 export const BUTTON_BORDER_RADIUS : number = 0;
+
+export const THEME_COLOR: string = "#b52427"

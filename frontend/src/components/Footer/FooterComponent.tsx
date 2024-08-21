@@ -1,4 +1,4 @@
-import { Text, Container, ActionIcon, Group } from '@mantine/core';
+import { Container, ActionIcon, Group } from '@mantine/core';
 import { useFooterStyle } from './hooks/useFooterStyle'
 import { FooterData } from './types/FooterData';
 import { DataService } from '../../services/DataService';
@@ -25,7 +25,7 @@ function FooterLink({group} : FooterLinkGroupParameter){
       <br></br>
     </div>
   );
-      return <p style={{fontSize: 15}}>{links}</p>
+      return <>{links}</>
     }
   
 function FooterGroup(props : {groups : FooterLinkGroup[]}){
@@ -70,7 +70,6 @@ export function FooterResponsive() {
             <Link to={"/"}>
               <img src={logo} height={45} alt='logo'/>
             </Link>
-
 
             <p style={{fontSize: 15, color: "grey"}}>
               <RenderLanguageText text = {data.slogan}/>

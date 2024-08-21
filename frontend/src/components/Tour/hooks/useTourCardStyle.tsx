@@ -1,4 +1,5 @@
 import {createStyles, rem } from '@mantine/core';
+import { THEME_COLOR } from '../../../utils/constants';
 
 export const useTourcardStyle = createStyles((theme) => ({
     card: {
@@ -15,7 +16,7 @@ export const useTourcardStyle = createStyles((theme) => ({
     },
   
     like: {
-      color: theme.colors.red[6],
+      color: THEME_COLOR, //6
     },
   
     label: {

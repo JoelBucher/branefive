@@ -1,4 +1,5 @@
 import { createStyles, rem } from "@mantine/core";
+import { THEME_COLOR } from "../../../utils/constants";
 
 export const useBandStyles = createStyles((theme) => ({
   
@@ -18,10 +19,10 @@ export const useBandStyles = createStyles((theme) => ({
     },
 
     button: {
-      background: theme.colors.red[6],
+      background: THEME_COLOR, // 6
 
       ":hover" : {
-        background: theme.colors.red[5],
+        background: THEME_COLOR,
       }
     },
   }));

@@ -1,4 +1,5 @@
 import { createStyles, rem } from '@mantine/core';
+import { THEME_COLOR } from '../../../utils/constants';
 
 export const useNewsletterStyle = createStyles((theme) => ({
     wrapper: {
@@ -39,10 +40,10 @@ export const useNewsletterStyle = createStyles((theme) => ({
       height: rem(54),
       paddingLeft: rem(38),
       paddingRight: rem(38),
-      background: theme.colors.red[6],
+      background: THEME_COLOR, //6
   
       '&:hover': {
-        background: theme.colors.red[5]
+        background: THEME_COLOR
       }
     },
   }));

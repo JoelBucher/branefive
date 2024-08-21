@@ -1,4 +1,4 @@
-import { AspectRatio, Grid } from '@mantine/core';
+import { Grid } from '@mantine/core';
 import { TourTimeline } from './components/TourTimeline';
 import { TourNextEvent } from './components/TourNextEvent';
 import { AssetsService } from '../../services/AssetsService';
@@ -14,28 +14,23 @@ export function Tour() {
 
   function sideImage(){
     return(
-      <Grid.Col span={5}>
-        <AspectRatio ratio={1920 / 1080}>
-            <img src={AssetsService.get(tourImage)} style={{borderRadius: BORDER_RADIUS}}/>
-        </AspectRatio>
+      <Grid.Col span="content">
+        <img src={AssetsService.get(tourImage)} style={{borderRadius: BORDER_RADIUS}} width={"100%"} alt=''/>
       </Grid.Col>
     );
   }
 
   return (
-    <Grid align='center' justify='center' style={{marginTop: 50}}>
-      <Grid.Col sm={10} lg={8}>
+    <Grid justify='center' style={{marginTop: 50}}>
+      <Grid.Col sm={5} lg={4}>
         <TourNextEvent/>
 
-        <Grid columns={8}>
-          <Grid.Col span={3}>
-            <TourTimeline/>
-          </Grid.Col>
-
-          {!isMdOrSmaller && sideImage()}
-        </Grid>
-
+        <TourTimeline/>
       </Grid.Col>
+      <Grid.Col sm={5} lg={4}>
+      {!isMdOrSmaller && sideImage()}
+      </Grid.Col>
+
     </Grid>
   );
 }

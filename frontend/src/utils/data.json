@@ -75,7 +75,7 @@
             {
                 "name": "Schüür, feat. Jack Slamer",
                 "description": {"en": "", "de": ""},
-                "date": "2024-09-28T20:30:00Z",
+                "date": "2024-09-21T20:30:00Z",
                 "place": {"name": "Luzern, CH", "latitude": 0, "longitude": 0}
             }
         ]
@@ -116,7 +116,7 @@
                 "assetId": "noah",
                 "properties": [
                     {
-                        "iconAssetId": "music",
+                        "iconAssetId": "guitar2",
                         "description": {"en": "Rhythm Guitar", "de": "Gitarre"}
                     }
                 ],
@@ -134,7 +134,7 @@
                 "assetId": "elija",
                 "properties": [
                     {
-                        "iconAssetId": "music.svg",
+                        "iconAssetId": "drums",
                         "description": {"en": "Drums", "de": "Schlagzeug"}
                     }
                 ]
@@ -144,7 +144,7 @@
                 "assetId": "suvin",
                 "properties": [
                     {
-                        "iconAssetId": "music",
+                        "iconAssetId": "guitar2",
                         "description": {"en": "Lead Guitar", "de": "Gitarre"}
                     }
                 ],
@@ -158,7 +158,7 @@
                 "assetId": "manuel",
                 "properties": [
                     {
-                        "iconAssetId": "music",
+                        "iconAssetId": "guitar2",
                         "description": {"en": "Bass", "de": "Bass"}
                     }
                 ],
@@ -320,7 +320,7 @@
         "address1": "Branefive",
         "address2": "Rankstrasse 4",
         "address3": "6294 Ermensee",
-        "phone": "041 917 01 18"
+        "phone": "+41 76 683 01 18"
     },
     "newsletter": {
         "title": {

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Text } from '@mantine/core';
 import { EmptyEvent, EventType } from "../types/EventType";
+import { THEME_COLOR } from "../../../utils/constants";
 
 interface EventParameter {
   deadline: EventType
@@ -15,7 +16,7 @@ export function TourCountdown(param : EventParameter) {
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
-  const hasNextEvent : boolean = param.deadline != EmptyEvent;
+  const hasNextEvent : boolean = param.deadline !== EmptyEvent;
 
   function getTimeUntil(deadline : EventType){
     const dealineTimestamp = new Date(deadline.date).getTime();
@@ -35,7 +36,7 @@ export function TourCountdown(param : EventParameter) {
 
   function displayTime(){
     return(
-      <Text component="span" variant="gradient" gradient={{ from: 'red', to: 'magenta' }} inherit>
+      <Text component="span" variant="gradient" gradient={{ from: THEME_COLOR, to: 'magenta' }} inherit>
         {leadingZero(days)} : {leadingZero(hours)} : {leadingZero(minutes)} : {leadingZero(seconds)}
       </Text>
     )

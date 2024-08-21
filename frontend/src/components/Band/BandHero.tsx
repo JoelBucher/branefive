@@ -1,15 +1,13 @@
-import { Text, Space, Grid, Image, BackgroundImage, Button } from "@mantine/core";
-import { useBandStyles } from "./hooks/useBandStyles";
+import { Grid, BackgroundImage, Button } from "@mantine/core";
 import { DataService } from "../../services/DataService";
 import { AssetsService } from "../../services/AssetsService";
 import { ImageType } from "../Gallery/types/ImageType";
 import { LanguageText } from "../../types/LanguageText";
 import { BandType } from "./types/BandType";
 import { RenderLanguageText } from "../../services/useLanguage";
-import { BUTTON_BORDER_RADIUS } from "../../utils/constants";
+import { BUTTON_BORDER_RADIUS, THEME_COLOR } from "../../utils/constants";
 
 export function BandHero(){
-    const { classes } = useBandStyles(); 
     
     const band : BandType= DataService.getBand();
 	const buttonText : LanguageText = band.heroButtonText;
@@ -25,19 +23,24 @@ export function BandHero(){
     return (
         <BackgroundImage src={AssetsService.get(bestFitImage.assetId)} style={{height: window.innerHeight}}>
             <Grid align='center' justify='center'>
-                <Grid.Col sm={4} lg={4} key={0}>
+                <Grid.Col sm={4} lg={4} key={"col0"}>
                         <h1>
                             <RenderLanguageText text={heroTitle}/>
                         </h1>
                         
                 </Grid.Col>
-                <Grid.Col sm={4} lg={4} key={1}>
+                <Grid.Col sm={4} lg={4} key={"col1"}>
                     <Button
                             size="xl"
                             component="a"
                             variant= "filled"
                             href="#/band"
-                            color="red"
+                            sx={{
+                                backgroundColor: THEME_COLOR,
+                                '&:hover': {
+                                    backgroundColor: THEME_COLOR,
+                                },
+                            }}
                             style={{borderRadius: BUTTON_BORDER_RADIUS}}
                             >
                             <p>

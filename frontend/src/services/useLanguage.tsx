@@ -4,10 +4,11 @@ import { BackwardsCompatibleTextType, LanguageText } from '../types/LanguageText
 import { isSimpleText } from '../types/BackwardsCompatibleTextType';
 import { DefaultTextType, isDefaultTextType } from '../types/DefaultTextType';
 import { GradientTextType, isGradientTextType } from '../types/GradientTextType';
-import { ReactComponentElement, ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { TextType } from '../types/TextType';
 import { Text } from "@mantine/core";
 import React from 'react';
+import { THEME_COLOR } from '../utils/constants';
 
 
 interface LanguageState {
@@ -28,18 +29,20 @@ function render(text: BackwardsCompatibleTextType) : ReactNode {
 
     // handle text if TextType
     const tt : TextType[] = text as TextType[]
-    const reactNodes : ReactNode[] = tt.map((t : TextType) => {
+    const reactNodes : ReactNode[] = tt.map((t : TextType, index: number) => {
         if(isDefaultTextType(t)){
-            return <>{(t as DefaultTextType).default}</>;
+            return <div key={index}>{(t as DefaultTextType).default}</div>;
         }
     
         if(isGradientTextType(t)){
             return(
-                <Text component="span" variant="gradient" gradient={{ from: 'red', to: 'magenta' }} inherit>
+                <Text component="span" variant="gradient" gradient={{ from: THEME_COLOR, to: 'magenta' }} inherit key={index}>
                     {(t as GradientTextType).gradient}
                 </Text>
             );
         }
+
+        return <></>
     });
 
     return <React.Fragment>{reactNodes}</React.Fragment>;

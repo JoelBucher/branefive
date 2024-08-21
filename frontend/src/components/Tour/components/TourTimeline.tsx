@@ -1,4 +1,4 @@
-import { Timeline, Text, Badge } from "@mantine/core";
+import { Timeline, Badge } from "@mantine/core";
 import { DataService } from "../../../services/DataService";
 import { EventType } from "../types/EventType";
 import { TourType } from "../types/TourType";
@@ -7,7 +7,23 @@ import { useTourNextEventStyle as useTourStyle } from "../hooks/useTourNextEvent
 
 function getEventTitle(event : EventType){
   if(new Date(event.date) < new Date()){
-    return <p style={{marginTop:-5}}>{event.name} {' '} <Badge color="red">passed</Badge></p>
+    return(
+      <div>
+        <table>
+          <tbody>
+           <tr>
+              <td>
+                <p style={{marginTop:-5}}>{event.name}</p>
+              </td>
+              <td>
+                <div style={{marginTop: -20, marginLeft: 5}}>
+                  <Badge color="red">passed</Badge>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>)
   }
   return <p style={{marginTop:-5}}>{event.name}</p>;
 }
@@ -31,9 +47,15 @@ export function TourTimeline() {
   const futureEvents = events.length - pastEvents -1;
 
   return (
-    <Timeline active={futureEvents} bulletSize={20} lineWidth={4} color={"red"}>
+    <Timeline active={futureEvents} bulletSize={20} lineWidth={4} color="red">
       {sorted.map((event, index) => 
-        <Timeline.Item title={getEventTitle(event)} lineVariant={index < futureEvents ? "solid" : "dotted"} key={index} className={classes.timeline}>
+        <Timeline.Item
+          title={getEventTitle(event)}
+          lineVariant={index < futureEvents ? "solid" : "dotted"}
+          key={index}
+          className={classes.timeline}
+          >
+
           <p style={{fontSize: 15, lineHeight: 0.4}}>{DateTimeService.formatDate(event.date)}</p>
           <p style={{fontSize: 15, lineHeight: 0.4}}>{event.place.name}</p>
         </Timeline.Item>

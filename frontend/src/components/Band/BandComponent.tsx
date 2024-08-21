@@ -13,7 +13,7 @@ function MemberPropertyTable(props : {properties : MemberPropertyType[]}){
     const tableRows = props.properties.map((property, index) => {
         return(
             <tr key={index}>
-                <td><img src={property.iconAssetId}></img></td>
+                <td><img alt="" src={AssetsService.get(property.iconAssetId)} width={25}/></td>
                 <td><RenderLanguageText text = {property.description}/></td>
             </tr>
         )

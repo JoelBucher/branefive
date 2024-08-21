@@ -1,4 +1,5 @@
 import { createStyles, rem } from "@mantine/core";
+import { THEME_COLOR } from "../../../utils/constants";
 
 export const useShopStyle = createStyles((theme) => ({
     card: {
@@ -27,10 +28,10 @@ export const useShopStyle = createStyles((theme) => ({
 
     button: {
       marginTop: 15,
-      background: theme.colors.red[6],
+      background: THEME_COLOR, //6
 
       '&:hover': {
-        background: theme.colors.red[5]
+        background: THEME_COLOR
       }
     },
 
@@ -47,7 +48,7 @@ export const useShopStyle = createStyles((theme) => ({
       width: 10,
       borderRadius: "50%",
       display: "inline-block",
-      backgroundColor: theme.colors.red[6],
+      backgroundColor: THEME_COLOR, //6
     },
 
   }));
