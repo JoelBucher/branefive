@@ -1,4 +1,4 @@
-import { Text, Button, Group, Grid, Avatar, MediaQuery } from '@mantine/core';
+import { Button, Group, Grid, Avatar, MediaQuery } from '@mantine/core';
 import { useNewsletterStyle } from './hooks/useNewsletterStyle';
 import { AssetsService } from '../../services/AssetsService';
 import { NewsletterType } from './types/NewsletterType';

@@ -1,4 +1,3 @@
-import { Grid } from "@mantine/core";
 import { DataService } from "../../../services/DataService"
 import { EmptyEvent, EventType } from "../types/EventType";
 import { TourType } from "../types/TourType";
@@ -24,7 +23,7 @@ function getNextEvent() : EventType {
 
 export function TourNextEvent(){
     const latestEvent : EventType = getNextEvent();
-    const hasNextEvent : boolean = latestEvent != EmptyEvent;
+    const hasNextEvent : boolean = latestEvent !== EmptyEvent;
     const { classes } = useTourNextEventStyle();
 
     function eventInfo(){

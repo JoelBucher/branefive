@@ -1,4 +1,4 @@
-import { AspectRatio, Button, Card, Divider, Grid, Image, SimpleGrid, Space, Text } from "@mantine/core";
+import { AspectRatio, Button, Card, Grid, Image, SimpleGrid, Space } from "@mantine/core";
 import { RenderLanguageText } from "../../services/useLanguage";
 import { useShopStyle } from "./hooks/useShopStyle";
 import { ProductType } from "./types/ProductType";

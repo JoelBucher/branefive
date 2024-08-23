@@ -2,7 +2,6 @@ import { DataService } from '../../services/DataService';
 import { AlbumType } from './types/AlbumType';
 import { Album } from './components/Album';
 import { Grid, Space } from '@mantine/core';
-import { Spotify } from 'react-spotify-embed';
 
 export function Music(){
     const albums : AlbumType[] = DataService.getAlbums();

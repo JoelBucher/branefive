@@ -1,4 +1,4 @@
-import { ScrollArea, Table, Grid, Image } from '@mantine/core';
+import { Grid } from '@mantine/core';
 import { AlbumType } from '../types/AlbumType';
 import { AssetsService } from '../../../services/AssetsService';
 import { RenderLanguageText } from '../../../services/useLanguage';
@@ -11,7 +11,7 @@ interface AlbumParameter {
 
 function AlbumImage({album} : AlbumParameter){
     return (
-        <img width={240} src={AssetsService.get(album.assetId)} style={{borderRadius: BORDER_RADIUS}}/>
+        <img width={240} src={AssetsService.get(album.assetId)} alt={"album"} style={{borderRadius: BORDER_RADIUS}}/>
     );
 }
 
