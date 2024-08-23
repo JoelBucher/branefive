@@ -58,7 +58,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://joelbucher.github.io/branefive/",
+  "homepage": "https://joelbucher.github.io/",
   "devDependencies": {
     "@types/dateformat": "^5.0.0",
     "@types/google-map-react": "^2.1.7"
