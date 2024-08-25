@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2daba71b.css",
-    "main.js": "/static/js/main.b5877815.js",
+    "main.js": "/static/js/main.930ef51e.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/video.mp4": "/static/media/video.1698dfae901693528826.mp4",
     "static/media/enjoyer2.png": "/static/media/enjoyer2.a28cb0f45baf9b7cae03.png",
@@ -28,11 +28,11 @@
     "static/media/branefive_logo.svg": "/static/media/branefive_logo.8a58a0a6a3ccf0f0e18500951fdd869a.svg",
     "index.html": "/index.html",
     "main.2daba71b.css.map": "/static/css/main.2daba71b.css.map",
-    "main.b5877815.js.map": "/static/js/main.b5877815.js.map",
+    "main.930ef51e.js.map": "/static/js/main.930ef51e.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2daba71b.css",
-    "static/js/main.b5877815.js"
+    "static/js/main.930ef51e.js"
   ]
 }
