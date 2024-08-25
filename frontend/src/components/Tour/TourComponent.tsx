@@ -5,7 +5,7 @@ import { AssetsService } from '../../services/AssetsService';
 import { DataService } from '../../services/DataService';
 import { TourType } from './types/TourType';
 import { useMediaQuery } from '@mantine/hooks';
-import { BORDER_RADIUS } from '../../utils/constants';
+import { BORDER_RADIUS, CONTENT_MARGIN } from '../../utils/constants';
 
 export function Tour() {
   const tourData : TourType = DataService.getTourData();
@@ -21,16 +21,18 @@ export function Tour() {
   }
 
   return (
-    <Grid justify='center' style={{marginTop: 50}}>
-      <Grid.Col sm={5} lg={4}>
-        <TourNextEvent/>
-        <Space h={20}/>
-        <TourTimeline/>
-      </Grid.Col>
-      <Grid.Col sm={5} lg={4}>
-      {!isMdOrSmaller && sideImage()}
-      </Grid.Col>
-
-    </Grid>
+    <>
+      <Space h={40}/>
+      <Grid justify='center' style={{margin: CONTENT_MARGIN}}>
+        <Grid.Col sm={5} lg={4}>
+          <TourNextEvent/>
+          <Space h={20}/>
+          <TourTimeline/>
+        </Grid.Col>
+        <Grid.Col sm={5} lg={4}>
+        {!isMdOrSmaller && sideImage()}
+        </Grid.Col>
+      </Grid>
+    </>
   );
 }

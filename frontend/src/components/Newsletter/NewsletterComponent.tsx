@@ -4,7 +4,7 @@ import { AssetsService } from '../../services/AssetsService';
 import { NewsletterType } from './types/NewsletterType';
 import { DataService } from '../../services/DataService';
 import { RenderLanguageText } from '../../services/useLanguage';
-import { BUTTON_BORDER_RADIUS } from '../../utils/constants';
+import { BUTTON_BORDER_RADIUS, CONTENT_MARGIN } from '../../utils/constants';
 
 function NewsletterText(){
   const { classes } = useNewsletterStyle();
@@ -38,7 +38,7 @@ function NewsletterText(){
 
 export function Newsletter() {
   return (
-    <Grid align='center' justify='center'>
+    <Grid align='center' justify='center' style={{margin: CONTENT_MARGIN}}>
         <Grid.Col sm={5} lg={4}>
           <NewsletterText/>
         </Grid.Col>

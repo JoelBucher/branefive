@@ -5,7 +5,7 @@ import { ImageType } from "../Gallery/types/ImageType";
 import { LanguageText } from "../../types/LanguageText";
 import { BandType } from "./types/BandType";
 import { RenderLanguageText } from "../../services/useLanguage";
-import { BUTTON_BORDER_RADIUS, THEME_COLOR } from "../../utils/constants";
+import { BUTTON_BORDER_RADIUS, CONTENT_MARGIN, THEME_COLOR } from "../../utils/constants";
 
 export function BandHero(){
     
@@ -22,7 +22,7 @@ export function BandHero(){
 
     return (
         <BackgroundImage src={AssetsService.get(bestFitImage.assetId)} style={{height: window.innerHeight}}>
-            <Grid align='center' justify='center'>
+            <Grid align='center' justify='center' style={{margin: CONTENT_MARGIN}}>
                 <Grid.Col sm={4} lg={4} key={"col0"}>
                         <h1>
                             <RenderLanguageText text={heroTitle}/>
@@ -35,6 +35,7 @@ export function BandHero(){
                             component="a"
                             variant= "filled"
                             href="#/band"
+                            onClick={() => {window.scrollTo(0, 0)}}
                             sx={{
                                 backgroundColor: THEME_COLOR,
                                 '&:hover': {

@@ -1,21 +1,20 @@
 import { DataService } from '../../services/DataService';
 import { AlbumType } from './types/AlbumType';
 import { Album } from './components/Album';
-import { Grid, Space } from '@mantine/core';
+import { Space } from '@mantine/core';
+import { CONTENT_MARGIN } from '../../utils/constants';
 
 export function Music(){
     const albums : AlbumType[] = DataService.getAlbums();
 
     return (
         <>
-            <Space h={100}/>
-            <Grid justify='center'>
-                <Grid.Col span={11}>
-                    {albums.map((album, index) =>
-                        <Album album = {album} key={index}/>
-                    )}
-                </Grid.Col>
-            </Grid>
+        <Space h={100}/>
+        <div style={{margin: CONTENT_MARGIN + 10}}>
+            {albums.map((album, index) =>
+                <Album album = {album} key={index}/>
+            )}
+        </div>
         </>
     );
 }

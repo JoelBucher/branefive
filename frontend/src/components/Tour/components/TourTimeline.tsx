@@ -94,8 +94,8 @@ export function TourTimeline() {
           >
             <Grid columns={24}>
               <Col span={12}>
-                <p style={{fontSize: 15, lineHeight: 0.4}}>{DateTimeService.formatDate(event.date)}</p>
-                <p style={{fontSize: 15, lineHeight: 0.4}}>{event.place.name}</p>
+                <p style={{fontSize: 15, lineHeight: 1}}>{DateTimeService.formatDate(event.date)}</p>
+                <p style={{fontSize: 15, lineHeight: 1}}>{event.place.name}</p>
               </Col>
               <Col span={12} style={{ display: 'flex', justifyContent: 'flex-end', marginTop: -40}} >
                 {(event.showTicketLink && index <= futureEvents) ? ticketButton(event) : <></>}

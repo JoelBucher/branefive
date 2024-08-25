@@ -18,12 +18,11 @@ function AlbumImage({album} : AlbumParameter){
 export function Album({album} : AlbumParameter){
     return (
         <>
-            <Grid>
-                <Grid.Col span={8}>
+            <Grid justify='start'>
+                <Grid.Col span={12}>
                     <h2>{album.title}</h2>
                     <p><RenderLanguageText text = {album.description}/></p>
                 </Grid.Col>
-                <Grid.Col span={4}></Grid.Col>
             </Grid>
             <Grid style={{marginBottom: 64}}>
                 <Grid.Col sm={4} orderSm={1}>

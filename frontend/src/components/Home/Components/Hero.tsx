@@ -34,7 +34,7 @@ function BackgroundVideo(){
     return(
         <video
         id="heroVideo"
-        autoPlay muted loop playsInline webkit-playsinline
+        autoPlay muted loop playsInline webkit-playsinline="true"
         style={{minHeight: '100%', minWidth: "100%", position: "absolute"}}>
 
             <source src={AssetsService.get('video')} type="video/mp4"/>

@@ -7,7 +7,7 @@ import { RenderLanguageText } from "../../services/useLanguage";
 import { Carousel } from "@mantine/carousel";
 import { NewsType } from "../Story/types/NewsType";
 import { useMediaQuery } from "@mantine/hooks";
-import { BORDER_RADIUS } from "../../utils/constants";
+import { BORDER_RADIUS, CONTENT_MARGIN } from "../../utils/constants";
 
 export function NewsComponent(){
     const { classes } = useNewsStyle(); 
@@ -42,7 +42,7 @@ export function NewsComponent(){
     ));
 
   return (
-    <Grid align='center' justify='center'>
+    <Grid align='center' justify='center' style={{margin: CONTENT_MARGIN}}>
         <Grid.Col sm={10} lg={8}>
             <h1>
                 <RenderLanguageText text={newsData.heroTitle}/>

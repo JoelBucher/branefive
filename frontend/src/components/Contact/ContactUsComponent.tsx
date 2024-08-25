@@ -7,6 +7,7 @@ import { IconPhone, IconMapPin, IconAt } from '@tabler/icons-react';
 import { useContactUsStyle } from './hooks/useContactUsStyle';
 import { DataService } from '../../services/DataService';
 import { RenderLanguageText } from '../../services/useLanguage';
+import { CONTENT_MARGIN } from '../../utils/constants';
 /*
   <form className={classes.form} onSubmit={(event) => event.preventDefault()}>
             <Text fz="lg" fw={700} className={classes.title}>
@@ -43,7 +44,7 @@ export function ContactUs() {
     return (
       <>
         <Space h={50}/>
-        <Grid justify="center">
+        <Grid justify="center" style={{margin: CONTENT_MARGIN}}>
         <Grid.Col md={10} lg={7}>
         <Paper shadow="md">
           <div className={classes.wrapper}>
