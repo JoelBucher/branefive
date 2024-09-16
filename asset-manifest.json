@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.2daba71b.css",
-    "main.js": "/static/js/main.930ef51e.js",
+    "main.js": "/static/js/main.ea109f3e.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
     "static/media/video.mp4": "/static/media/video.1698dfae901693528826.mp4",
+    "static/media/elija.jpg": "/static/media/elija.7b75fa78a9ebb37b1902.jpg",
     "static/media/enjoyer2.png": "/static/media/enjoyer2.a28cb0f45baf9b7cae03.png",
     "static/media/manuel.jpg": "/static/media/manuel.a2fa1797717523b7f1b3.jpg",
     "static/media/freeTheAnimalInYou.png": "/static/media/freeTheAnimalInYou.2ffc55e22e2fa4643f20.png",
@@ -11,7 +12,6 @@
     "static/media/julian.jpeg": "/static/media/julian.b875f3cb90a236902894.jpeg",
     "static/media/landscape.jpg": "/static/media/landscape.99db72014a4f4940469a.jpg",
     "static/media/singingInSilence.png": "/static/media/singingInSilence.8df9cec41f3917003e04.png",
-    "static/media/elija.jpeg": "/static/media/elija.31eb40b2b0710c90b9aa.jpeg",
     "static/media/tour.jpg": "/static/media/tour.37855850aa7c164c1a74.jpg",
     "static/media/portrait.jpg": "/static/media/portrait.97b535a8e71a48111810.jpg",
     "static/media/suvin.jpeg": "/static/media/suvin.86f8d5e1206110ef81bc.jpeg",
@@ -28,11 +28,11 @@
     "static/media/branefive_logo.svg": "/static/media/branefive_logo.8a58a0a6a3ccf0f0e18500951fdd869a.svg",
     "index.html": "/index.html",
     "main.2daba71b.css.map": "/static/css/main.2daba71b.css.map",
-    "main.930ef51e.js.map": "/static/js/main.930ef51e.js.map",
+    "main.ea109f3e.js.map": "/static/js/main.ea109f3e.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2daba71b.css",
-    "static/js/main.930ef51e.js"
+    "static/js/main.ea109f3e.js"
   ]
 }
