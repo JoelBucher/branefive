@@ -61,14 +61,6 @@
         "tourImage": "tour",
         "events": [
             {
-                "name": "Metbar",
-                "description": {"en": "", "de": ""},
-                "date": "2024-06-01T20:00:00Z",
-                "place": {"name": "Lenzburg, CH", "latitude": 0, "longitude": 0},
-                "ticketLink": "https://www.eventfrog.ch",
-                "showTicketLink": false
-            },
-            {
                 "name": "Synergia OpenAir Festival",
                 "description": {"en": "", "de": ""},
                 "date": "2024-09-13T20:00:00Z",
@@ -79,10 +71,18 @@
             {
                 "name": "Schüür, feat. Jack Slamer",
                 "description": {"en": "", "de": ""},
-                "date": "2024-09-21T20:30:00Z",
+                "date": "2024-09-21T18:30:00Z",
                 "place": {"name": "Luzern, CH", "latitude": 0, "longitude": 0},
                 "ticketLink": "https://www.seetickets.com/ch/event/jack-slamer/konzerthaus-schuur/3064748?PartnerID=116&src=web",
                 "showTicketLink": true
+            },
+            {
+                "name": "Schlössertag",
+                "description": {"en": "Branefive rocks Schloss Heidegg", "de": "Branefive rockt Schloss Heidegg"},
+                "date": "2024-10-06T08:00:00Z",
+                "place": {"name": "Gelfingen, CH", "latitude": 0, "longitude": 0},
+                "ticketLink": "",
+                "showTicketLink": false
             }
         ]
     },

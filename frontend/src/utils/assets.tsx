@@ -10,7 +10,7 @@ export function loadAssets(){
     assets.set('video', require("../assets/video.mp4"));
     assets.set('richensee', require("../assets/richensee.jpeg"));
     assets.set('logo', require('../assets/branefive_logo.svg'))
-    assets.set('elija', require('../assets/elija.jpeg'))
+    assets.set('elija', require('../assets/elija.jpg'))
     assets.set('elias', require('../assets/elias.jpeg'))
     assets.set('suvin', require('../assets/suvin.jpeg'))
     assets.set('manuel', require('../assets/manuel.jpg'))

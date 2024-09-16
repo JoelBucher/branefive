@@ -6,6 +6,7 @@ import { DateTimeService } from "../../../services/DateTimeService";
 import { useTourNextEventStyle as useTourStyle } from "../hooks/useTourNextEventStyle";
 import { IconTicket } from "@tabler/icons-react";
 import { BUTTON_BORDER_RADIUS, THEME_COLOR } from "../../../utils/constants";
+import { RenderLanguageText } from "../../../services/useLanguage";
 
 function ticketButton(event: EventType){
   return(
@@ -65,6 +66,19 @@ function getEventTitle(event : EventType){
   return <p style={{marginTop:-5}}>{event.name}</p>;
 }
 
+function renderEventDescription(event: EventType){
+
+  if(!event.description) return <></>
+
+  return(
+    <Col span={24}>
+      <p style={{lineHeight: 0.4, fontSize: 15, marginTop: -10, marginBottom: -10}}>
+        <RenderLanguageText text={event.description}/>
+      </p>
+    </Col>
+  )
+}
+
 export function TourTimeline() {
   const tour : TourType = DataService.getTourData();
   const events : EventType[] = tour.events;
@@ -93,6 +107,7 @@ export function TourTimeline() {
           className={classes.timeline}
           >
             <Grid columns={24}>
+              {renderEventDescription(event)}
               <Col span={12}>
                 <p style={{fontSize: 15, lineHeight: 1}}>{DateTimeService.formatDate(event.date)}</p>
                 <p style={{fontSize: 15, lineHeight: 1}}>{event.place.name}</p>
